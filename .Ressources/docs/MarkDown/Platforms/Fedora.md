@@ -54,6 +54,7 @@ zsh
 
 ## Clone Deps
 ```
+cd .
 wks clone
 ```
 
