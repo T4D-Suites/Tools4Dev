@@ -22,16 +22,23 @@ We recommand you to read at least manual install process without executing it be
 ## Description
 
 This script should be run via curl:
+```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/iFeelSmart/Tools4Dev/master/Platforms/install.sh)"; zsh
+```
+
 
 As an alternative, you can first download the install script and run it afterwards:
+```
 https://raw.githubusercontent.com/iFeelSmart/Tools4Dev/master/Platforms/install.sh
 sh install.sh
 zsh
+```
 
 Some variable on this script can be tweaked by setting them when running the script.
 Tools4Dev_PATH=$HOME/.tools4dev sh install.sh
+```
 sh -c "Tools4Dev_PATH=$HOME/.tools4dev; $(curl -fsSL https://raw.githubusercontent.com/iFeelSmart/Tools4Dev/master/Platforms/install.sh)"; zsh
+```
 
 
 ## Available Options
