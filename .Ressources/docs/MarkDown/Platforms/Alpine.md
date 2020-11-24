@@ -22,17 +22,17 @@ apk add zsh git git-lfs python2
 ```
 
 
-## Shared Folder
+## Root Folder
 ```
-mkdir -p /home/shared
-cd /home/shared
+mkdir -p $HOME/.tools4dev
+cd $HOME/.tools4dev
 ```
 
 
 ## Clone Tools4Dev
 ```
-git clone {URL} --single-branch Tools4Dev
-cd Tools4Dev
+git clone {URL} --single-branch src
+cd src
 ```
 
 

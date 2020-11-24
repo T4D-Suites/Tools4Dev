@@ -21,18 +21,17 @@ git-lfs install
 ```
 
 
-## Shared Folder
+## Root Folder
 ```
-mkdir -p /Users/Shared
-sudo chown $USER /Users/Shared
-cd /Users/Shared
+mkdir -p $HOME/.tools4dev
+cd $HOME/.tools4dev
 ```
 
 
 ## Clone Tools4Dev
 ```
-git clone {URL} Tools4Dev
-cd Tools4Dev
+git clone {URL} src
+cd src
 ```
 
 
