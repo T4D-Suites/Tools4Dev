@@ -30,3 +30,12 @@
 - **chore**     kubernetes - add kubernetes get functions
 - **feature**    t4d - Tools4Dev_PATH/bin can now be added to path. It will allow user not loading natively t4d to use it as external binary script
 - **feature**    t4d uninstall available
+- **feature**    bb8 - propagate hs now --keep-branch option to avoid overriding branch form master PR
+- **feature**    bb8 - finish can now automatically add default reviewers to any PR
+- **chore**     gik - push allow now --no-verify option to avoid hooks if needed
+- **chore**     gik - create _t4dModGikUtilsSwitchToBranch
+- **chore**     android - improve check permission folder
+- **chore**     ios - POC apple-store api - backend still in dev at the moment
+- **chore**     cmake t4d - create cmake t4d integration that will use cmake opensource lib
+- **bugfix**     xml - manifest files with value using type name was not parsed correclty
+- **chore**     t4d - new install zshrc content to allow t4d to be used as external command
