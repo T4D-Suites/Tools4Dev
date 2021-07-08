@@ -35,6 +35,11 @@ __vi $Tools4Dev_PATH/.${USER}.env__ add line __BITBUCKET_USERNAME={BitBucketUser
 Go to your keychain then add a password with account named __BitBucketPassword__ .
 Take care of removing all old BITBUCKET_USER_AND_PASSWORD reference in $WS_ROOT/.${USER}.env
 Bb8 will now ask for your keychain password any time he wants to access your password.
+remember that such a security lvl will broke some silent functions that will need your
+password to access keychain
+
+* Token
+With recent bitbucket version you may replace bitbucket password by a token it will work as well
 </p>
 
 
@@ -96,11 +101,11 @@ Show Option documentation
     - _Documentation Unavailable_
 - **propagate**
     - _Forward Master Pr reviewers to all sub PRs_
-        >        <URL>
-        >        -f    = force update, never ask
-        >        -done = remove WIP or other temp PR status
-        >        -wip  = Add WIP status
-        >        -add <Url> = Add PullRequest to description
+        >        * -f                      = force update, never ask
+        >        * -done                   = remove WIP or other temp PR status
+        >        * -wip                    = Add WIP status
+        >        * -keep-branch            = Do not update subPR branch
+        >        * -add <Url>              = Add PullRequest to description
 - **duplicate**
     - _Allow user to cherry-pick all commits from a pull request to another base branch_
         >        * -url <link>           = Get All information from specified PullRequest URL
@@ -113,7 +118,6 @@ Show Option documentation
 - **finish**
     - _Create Global Pull Request AND Related pull request_
         >        -b | -branch <BranchName>        = force PullRequest target branches, 
-        >        -d                               = force description json file
 - **help**
     - _Show Project Documentation_
 

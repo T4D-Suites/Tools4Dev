@@ -38,6 +38,7 @@ Modules/jks/_main_:_jksDoc
 Modules/jks/_main_:_jksTips
 Modules/jks/_main_:_t4dModJksLogo
 Modules/gik/gik-utils:_t4dModGikUtilsSync
+Modules/gik/gik-utils:_t4dModGikUtilsSwitchToBranch
 Modules/gik/gik-utils:_t4dModGikDirtyWorkspace
 Modules/gik/gik-utils:_t4dModGikUtilsShaSync
 Modules/gik/gik-utils:_t4dModGikUtilsFetch
@@ -124,10 +125,12 @@ Modules/bpi/bpi-utils:_t4dModBpiInfo
 Modules/bpi/_main_:_bpi
 Modules/bpi/_main_:_bpiDoc
 Modules/bpi/_main_:_t4dModBpiLogo
+Source/Apple/apple-api:_t4dAppleApiCall
 Source/Apple/_main_:_t4dSrcAppleUploadOnTestFlight
 Source/Apple/_main_:_t4sSrcApplePrintPlistForUpload
 Source/Redmine/_main_:_t4dSrcRedmineDownloadFile
 Source/Docker/_main_:_t4dDocker
+Source/CMake/_main_:_t4dSrcCMakeParseTargets
 Source/FileSystem/ssh-utils:_t4dSrcFileSystemSshT4dOutput
 Source/FileSystem/ssh-utils:_t4dSrcFileSystemSshOutput
 Source/FileSystem/_main_:_t4dSrcFileSystemExtract
@@ -351,6 +354,8 @@ Source/WikiJS/wikijs-index:_t4dSrcWikiJsIndexPut
 Source/WikiJS/wikijs-api:_t4dSrcWikiJsApi
 Source/Git/git-info:_t4dSrcGitInfoBranch
 Source/Git/git-info:_t4dSrcGitInfoSha7BranchName
+Source/Git/git-info:_t4dSrcGitInfoLastTagSha7
+Source/Git/git-info:_t4dSrcGitInfoListPrMerged
 Source/Git/git-info:_t4dSrcGitInfoGetLocalBranches
 Source/Git/git-info:_t4dSrcGitInfoSha
 Source/Git/git-info:_t4dSrcGitInfoSha7

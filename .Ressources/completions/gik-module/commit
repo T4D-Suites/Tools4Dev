@@ -4,3 +4,4 @@
 -branch
 -normalize
 -message
+--no-verify
