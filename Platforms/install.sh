@@ -27,6 +27,7 @@
 #       * CSH                       = Configure zsh to be your default shell
 #       * KEEP_ZSHRC                = if true do not install new zshrc file
 #       * T4D_REMOTE                = set Tools4Dev Remote URL
+#       * T4D_CLONE_ARGS            = transfert args to wks clone
 #       * T4D_NATIVE                = set to false if you don't want t4d to be natively loaded
 #       * T4D_BRANCH                = set Tools4Dev branch to install
 #       * T4D_REPO                  = set Tools4Dev Repo Path
@@ -84,6 +85,7 @@ fi
 
 T4D_REMOTE="${T4D_REMOTE:-"https://github.com/T4D-Suites/"}"
 T4D_BRANCH="${T4D_BRANCH:-main}"
+T4D_CLONE_ARGS="${T4D_CLONE_ARGS}"
 T4D_REPO="${T4D_REPO:-"Tools4Dev.git"}"
 T4D_MANIFEST="${T4D_MANIFEST:-"https://raw.githubusercontent.com/T4D-Suites/T4D-Team-Default/main/manifest.xml"}"
 T4D_ROOT_PATH="${T4D_ROOT_PATH:-"$HOME/.tools4dev"}"
@@ -174,7 +176,7 @@ wks_clone(){
             _t4dDebugLog $pwarning "Unknown type of manifest.xml file - $T4D_MANIFEST -"
         fi
         cd $Tools4Dev_PATH
-        zsh -c "$Tools4Dev_PATH/t4d wks clone"
+        zsh -c "$Tools4Dev_PATH/t4d wks clone $(echo $T4D_CLONE_ARGS)"
     fi
 }
 
