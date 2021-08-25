@@ -48,7 +48,7 @@
 - **bugfix**     fix wks clone http
 
 
-## 5.4.0
+## 5.3.2
 - documentation  add userStories on how to create a new project and use jenkins as CI structure support
 - _improvements_ install can now receive extra args for git clone
 - _improvements_ add Deprecated folder to store all deprecated stuff in order to have a better tracability between version
