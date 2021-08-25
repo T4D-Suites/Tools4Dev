@@ -46,3 +46,15 @@
 
 ## 5.3.1
 - **bugfix**     fix wks clone http
+
+
+## 5.4.0
+- documentation  add userStories on how to create a new project and use jenkins as CI structure support
+- _improvements_ install can now receive extra args for git clone
+- _improvements_ add Deprecated folder to store all deprecated stuff in order to have a better tracability between version
+- _improvements_ python3 is now the default bin used to convert json output
+- _improvements_ chl allow user to generate shell code structure without mandatory args
+- **bugfix**     jks - startWithParams was failing if your jenkinsFile has only 1 param available
+- _improvements_ wks - clone allow https with no credentials
+- **bugfix**     chore - _t4dSystemGetDiffSha7 was returning duplicate content if folder name was too similar to another one
+- _improvements_ git - improving git functions to be compatible with gitlab folder's structure
