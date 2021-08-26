@@ -11,7 +11,7 @@ Composite model will present you how to manage params in your jenkinsfile.s and 
 
 # Dependencies
 
-We assume that you already have T4D paradigme on your repository AND you already have jenkinsfiles configured as singleton project
+We assume that you already have T4D paradigm on your repository AND you already have jenkinsfiles configured as singleton project
 
 
 ## Jenkinsfiles - Composite
@@ -19,7 +19,8 @@ We assume that you already have T4D paradigme on your repository AND you already
 If you start to have multi device, multiple backend, multiple client and/or add params to your build, you might want to use "composite" model that will increase complexity but also manage to do more and more things to grow with your project. Note that you can completely start with singleton model and move step by step to a fully composite model.
 
 Here is an example :
-```
+
+```groovy
 #!/usr/bin/env groovy
 @Library('main@release/1.0.0')
 // ///////////////////////////////////////////
