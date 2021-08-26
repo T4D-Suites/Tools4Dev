@@ -198,5 +198,5 @@ They are very few limitations on what you can do and our credo is `If you can ma
 
 # Links
 
-- [Sample - CMake's CI Integration](https://github.com/iFeelSmart/T4D-Sample-CMake/pull/3/files)
-- [Sample - CMake's ConfigT4J Integration](https://github.com/iFeelSmart/configT4J-Sample/pull/2)
+- [Sample - CMake's CI Integration](https://github.com/T4D-Suites/T4D-Sample-CMake/pull/1)
+- [Sample - CMake's ConfigT4J Integration](https://github.com/T4D-Suites/configT4J-Sample/pull/1/files)
