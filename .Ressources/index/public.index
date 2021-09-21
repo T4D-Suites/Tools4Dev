@@ -1,13 +1,13 @@
 #INDEX
-Modules/jic/_main_:jic
+Modules/bb8/_main_:bb8
 Modules/jks/_main_:jks
 Modules/gik/_main_:gik
-Modules/bb8/_main_:bb8
+Modules/jic/_main_:jic
 Modules/bpi/_main_:bpi
+Source/Common/debug:t4ddm
 Source/Common/_project_:findDataInXML
 Source/Common/_project_:findTypeInXML
 Source/Common/_project_:wkd
-Source/Common/debug:t4ddm
 Source/Common/_main_:t4dLogo
 Source/Common/_main_:t4dPerf
 Source/Common/_main_:t4dUpdate
