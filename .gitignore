@@ -23,5 +23,8 @@ Man
 
 **/Inventory/*/*.env
 
+.play-store.json
+
 #External Modules
 Modules/nvm
+Modules/tsu
