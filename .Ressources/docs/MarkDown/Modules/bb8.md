@@ -85,9 +85,9 @@ Show Option documentation
         >        -state          = Override State       OPEN     ||   DECLINED     || MERGED
         >        -tag <arg>      = Add Filter in Name, skipped all that is not containing Filter
 - **get**
-    - _Will Call BitBucket API in order to get many information about any PullRequest_
+    - _Will Call Git management tool API in order to get many information about any PullRequest_
 - **branch**
-    - _|One-line description of what it does. (less than 55 char)|_
+    - _Get branches available from Gitlab repo_
 - **merge**
     - _Merge a pull request to its destination_
 - **global-merge**

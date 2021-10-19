@@ -316,6 +316,7 @@ Source/Common/variable:_t4dVarClearValue
 Source/Common/variable:_t4dSystemSourceFile
 Source/Common/variable:_t4dSystemVariableIsInList
 Source/Common/variable:_t4dSystemVariableLog
+Source/Common/variable:_t4dGetVarContent
 Source/Common/json:_t4dConvertToJson
 Source/Common/json:_t4dGetJsonData
 Source/Common/json:_t4dGetJsonTabSize
@@ -497,6 +498,7 @@ Engine/Documentation/_main_:_t4dDocGetOptionsListV4
 Engine/Documentation/_main_:_t4dDocGetOptionsList
 Engine/Documentation/_main_:_t4dDocGetOptionsHiddenCall
 Engine/Documentation/_main_:_t4dDocConvertContentInto
+Engine/Documentation/_main_:_t4dGetModuleModeFromFunction
 Engine/Log/prompt:_t4dPromptLine
 Engine/Log/prompt:_t4dPromptLineChar
 Engine/Log/prompt:_t4dPromptEndOfLine
