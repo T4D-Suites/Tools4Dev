@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library('main@release/@JENKINS_LIB_VERSION@')
+@Library('@JENKINS_LIB_VERSION@')
 // ///////////////////////////////////////////
 import library.Main.*
 // import hudson.model.*
@@ -12,7 +12,7 @@ def pipeline = new api.pipeline.sequential()
 M_BuildTarget=["Init"]
 //////////////////
 env.M_Project = "@PROJECT_NAME@"
-env.M_RepositoryUrl="@GIT_REPOSITORY"
+env.M_RepositoryUrl="@GIT_REPOSITORY@"
 env.M_NotificationLvl=@JENKINS_NOTIFICATION_LVL@
 env.M_IrcChannel="@IRC_CHANNEL@"
 env.M_CI_Scenario="@CI_SCENARIO@"
