@@ -18,7 +18,7 @@ case $1 in
 
         if [[ $2 == "append" ]]; then
             ( cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc" ) 2> /dev/null
-            [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]] && cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "./Users/$USER.env" 
+            [[ ! -e "$T4D_USERS_PATH/$USER.env" ]] && cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "./Users/$USER.env" 
         elif [[ $2 == "askMe" ]]; then
             echo "================"
             cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g" 
@@ -28,13 +28,13 @@ case $1 in
             echo "Enter to proceed, Ctrl+C to abort"
             read answer
             cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc"
-            if [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "$Tools4Dev_PATH/Users/$USER.env"
+            if [[ ! -e "$T4D_USERS_PATH/$USER.env" ]]; then
+                cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "$T4D_USERS_PATH/$USER.env"
             fi
         else
             cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  > "$HOME/.zshrc" && echo "Tools4Dev  -> $Tools4Dev_PATH/Templates/zshrc.env copied in $HOME/.zshrc "
-            if [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user.env" "$Tools4Dev_PATH/Users/$USER.env"
+            if [[ ! -e "$T4D_USERS_PATH/$USER.env" ]]; then
+                cp -f "$Tools4Dev_PATH/Templates/user.env" "$T4D_USERS_PATH/$USER.env"
             fi
         fi
     ;;
