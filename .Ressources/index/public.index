@@ -16,7 +16,6 @@ Source/Common/_main_:t4dLoadModule
 Source/Common/_main_:t4dvv
 Source/Common/_main_:t4dLogVerbose
 Source/Common/_main_:t4dLogVerbose
-Source/Common/_main_:t4dLoadFile
 Source/Common/_main_:t4dCheckForUpdate
 Source/Common/_main_:t4dCheckForLastInit
 Source/Common/_main_:t4dDoc

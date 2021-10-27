@@ -5,6 +5,7 @@ last
 stop
 restart
 monitor
+init
 help
 edit
 sync

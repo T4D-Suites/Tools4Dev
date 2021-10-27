@@ -79,6 +79,8 @@ Show specific option's documentation
     - _Try to Stop last build then start a new one_
 - **monitor**
     - _Get Html page from specifique Project, BranchName and BuilderNumber in Jenkins_
+- **init**
+    - _allow user to create jenkinsfile dynamically_
 - **help**
     - _Show Project Documentation_
 - **edit**

@@ -20,9 +20,7 @@ Modules/jic/jic-parser:_t4dModJicParseAndDumpComments
 Modules/jic/_main_:_jic
 Modules/jic/_main_:_jicDoc
 Modules/jic/_main_:_t4dModJicLogo
-Modules/jks/jks-page-branch:_t4dSrcJenkinsPageBranchGetHtmlPage
-Modules/jks/jks-page-branch:_t4dSrcJenkinsPageBranchListBuilds
-Modules/jks/jks-page-branch:_t4dSrcJenkinsPageBranchBuildNow
+Modules/jks/jks-file:_t4dSrcJksFileInit
 Modules/jks/jks-info:_t4dModJksInfoMain
 Modules/jks/jks-info:_t4dModJksInfoGetBuild
 Modules/jks/jks-utils:_t4dModJksUtilsStart
@@ -102,6 +100,8 @@ Modules/bb8/_main_:_bb8
 Modules/bb8/_main_:_bb8Doc
 Modules/bb8/_main_:_bb8Tips
 Modules/bb8/_main_:_t4dModBb8Logo
+Modules/tsu/android-store/store-api:_t4dModTsuAndroidGetTokenAccess
+Modules/tsu/android-store/store-api:_t4dModTsuAndroidEditInsert
 Modules/bpi/bpi-s3:_t4dModBpiParsePath
 Modules/bpi/bpi-s3:_t4dModBpiListAddToCache
 Modules/bpi/bpi-s3:_t4dModBpiList
@@ -204,6 +204,7 @@ Source/Common/xml:_t4dFindTypeInXML
 Source/Common/xml:_t4dFindMarkerInXML
 Source/Common/json:_t4dConvertToJson
 Source/Common/json:_t4dGetJsonData
+Source/Common/json:_t4dConvertJsonToJwt
 Source/Common/json:_t4dGetJsonTabSize
 Source/Common/json:_t4dRemoveDataFromJson
 Source/Common/variable:_t4dSystemSetVariable
@@ -227,6 +228,7 @@ Source/Firebase/firebase-api:_t4dSrcFirebaseApiListProjects
 Source/Firebase/firebase-api:_t4dSrcFirebaseApiListApps
 Source/Firebase/_main_:_t4dSrcFirebaseCheckCredentials
 Source/Jira/jira-utils:_t4dSrcJiraTestURL
+Source/Jira/jira-utils:_t4dSrcJiraSetPassword
 Source/Jira/jira-utils:_t4dSrcJiraCheckCredentials
 Source/Jira/jira-api:_t4dJiraAPISearch
 Source/Jira/jira-api:_t4dJiraAPIGetMainPage
