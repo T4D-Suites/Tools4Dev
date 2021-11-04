@@ -12,6 +12,21 @@ fi
 export T4D_SILENT_COMMAND=true
 
 case $1 in
+    team)
+        t4d-init &> /dev/null
+        local _TeamOriginalPath="$(readlink $Tools4Dev_PATH/Team/$2)"
+        if [[ "$_TeamOriginalPath" == "" ]]; then
+            _TeamOriginalPath="$Tools4Dev_PATH/Team/$2"
+        fi
+        if [[ -e "$_TeamOriginalPath/t4d-manifest.xml" ]] && [[ "$WS_TEAM" != "$2" ]]; then
+            ln -sfn $_TeamOriginalPath/t4d-manifest.xml $Tools4Dev_PATH/manifest.xml
+            _t4dDebugLog $plog "Tools4Dev is now linked to $2"
+            _t4dDebugLog $plog "Team folder is now $_TeamOriginalPath"
+            _t4dDebugLog $pinfo "you can now use wkd to reload your environment"
+        elif [[ "$WS_TEAM" == "$2" ]]; then
+            _t4dCheckSucceeded "Team $2 already setup in Tools4Dev"
+        fi
+    ;;
     install)
         set -e
         cp -f "$HOME/.zshrc" "$HOME/.zshrc_" &&         echo "Tools4Dev  -> Old zshrc saved in $HOME/.zshrc_"
@@ -86,7 +101,7 @@ case $1 in
         t4dLoadProjectConf &> /dev/null || t4dLoadProjectConf
         $@
     ;;
-    -path)
+    -path|path)
         set -e
         cd $2
         shift
