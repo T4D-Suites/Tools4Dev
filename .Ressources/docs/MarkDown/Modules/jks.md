@@ -81,6 +81,7 @@ Show specific option's documentation
     - _Get Html page from specifique Project, BranchName and BuilderNumber in Jenkins_
 - **init**
     - _allow user to create jenkinsfile dynamically_
+        >        * -suffix               = add suffix to output file
 - **help**
     - _Show Project Documentation_
 - **edit**

@@ -9,17 +9,22 @@
 
 
 ## Synopsis
-<p>BitBucket API Command Line Tools</p>
+<p>Git management tool API Command Line Tools</p>
 
 
 ## Definition
 <p>
 
-BitBucket API Command Line Tools
+Git management tool API Command Line Tools
+
+* Pull Request vs Merge Request
+
+Same Git management feature with different names.
+This tool was created with PullRequest in mind so it will keep using that term in the documentation.
 
 * Create a global PullRequest
 
-Return green URL if PR was creating, Yellow if already exists
+Return green URL if PR was created, Yellow if already exists
 
 * Finish
 
@@ -39,6 +44,9 @@ remember that such a security lvl will broke some silent functions that will nee
 password to access keychain
 
 * Token
+
+Gitlab requires a Personal Access Token with 'api' scope to work.
+__vi $Tools4Dev_PATH/.${USER}.env__ add line __GITLAB_TOKEN={GitlabToken}__ .
 With recent bitbucket version you may replace bitbucket password by a token it will work as well
 </p>
 
