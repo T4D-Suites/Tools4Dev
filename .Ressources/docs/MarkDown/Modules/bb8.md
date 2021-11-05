@@ -48,6 +48,11 @@ password to access keychain
 Gitlab requires a Personal Access Token with 'api' scope to work.
 __vi $Tools4Dev_PATH/.${USER}.env__ add line __GITLAB_TOKEN={GitlabToken}__ .
 With recent bitbucket version you may replace bitbucket password by a token it will work as well
+
+* BB8 Mode
+
+Bb8 now support multiple remote config to be able to interact with both bitbucket and gitlab.
+Please define T4D_BB8_MODE in your env to be able to use it correctly
 </p>
 
 
@@ -128,6 +133,11 @@ Show Option documentation
         >        -b | -branch <BranchName>        = force PullRequest target branches, 
 - **help**
     - _Show Project Documentation_
+
+## Supported BB8 Mode
+* bitbucket
+* gitlab
+
 
 ## Example
 <p>
