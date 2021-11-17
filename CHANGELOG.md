@@ -60,4 +60,8 @@
 - _improvements_ git - improving git functions to be compatible with gitlab folder's structure
 
 
+## 5.4.0
+- **feature**    bb8 - add gitlab support
+- _improvements_ jic - improve how jira password is set
+
 ## 6.0.0
