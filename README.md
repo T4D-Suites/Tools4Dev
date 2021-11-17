@@ -60,7 +60,6 @@ It might be similar to Oh-My-Zsh and it will fufill some of their features (in a
    * [gik](.Ressources/docs/MarkDown/Modules/gik.md)
    * [jic](.Ressources/docs/MarkDown/Modules/jic.md)
    * [jks](.Ressources/docs/MarkDown/Modules/jks.md)
-   * [tsu](.Ressources/docs/MarkDown/Modules/tsu.md)
  * [External Tools](https://github.com/T4D-Suites/Tools4Jenkins)
    * [Jenkins-CLI](https://github.com/T4D-Suites/Tools4Jenkins)
    * [⌐configT4J-Sample](https://github.com/T4D-Suites/configT4J-Sample)
