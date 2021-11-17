@@ -71,6 +71,7 @@ It might be similar to Oh-My-Zsh and it will fufill some of their features (in a
    * [Documentation](.Ressources/docs/MarkDown/Utils/Documentation.md)
    * [G4d](.Ressources/docs/MarkDown/Utils/G4d.md)
      * [templates](.Ressources/docs/MarkDown/Utils/G4d-templates.md)
+     * [templates](.Ressources/docs/MarkDown/Utils/G4d-templates.md)
    * [Log](.Ressources/docs/MarkDown/Utils/Log.md)
      * [checkIfExist](.Ressources/docs/MarkDown/Utils/Log-checkIfExist.md)
      * [colors](.Ressources/docs/MarkDown/Utils/Log-colors.md)

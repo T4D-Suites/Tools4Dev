@@ -58,3 +58,8 @@
 - _improvements_ wks - clone allow https with no credentials
 - **bugfix**     chore - _t4dSystemGetDiffSha7 was returning duplicate content if folder name was too similar to another one
 - _improvements_ git - improving git functions to be compatible with gitlab folder's structure
+
+
+## 5.4.0
+- **feature**    bb8 - add gitlab support
+- _improvements_ jic - improve how jira password is set
