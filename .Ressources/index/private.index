@@ -250,6 +250,7 @@ Source/Common/system:_t4dSystemAddToPATHEnd
 Source/Common/system:_t4dSystemGetVariable
 Source/Common/system:_t4dSystemHealthInfo
 Source/Common/system:_t4dSystemCreateSymLink
+Source/Common/system:_t4dSystemGetOsArch
 Source/Common/debug:_t4dDebugLogArg
 Source/Common/debug:_t4dDebugCleanLog
 Source/Common/debug:_t4dLoadDebugMode
@@ -267,6 +268,8 @@ Source/Common/json:_t4dConvertJsonToJwt
 Source/Common/json:_t4dGetJsonTabSize
 Source/Common/json:_t4dRemoveDataFromJson
 Source/Common/variable:_t4dSystemSetVariable
+Source/Common/variable:_t4dVarGetValue
+Source/Common/variable:_t4dVarSetInFile
 Source/Common/variable:_t4dVarConvertToCamelCase
 Source/Common/variable:_t4dVarRemoveMaj
 Source/Common/variable:_t4dVarGetMaxSize
@@ -442,6 +445,7 @@ Source/Git/git-info:_t4dSrcGitInfoGetAbsolutePath
 Source/Git/git-info:_t4dSrcGitInfoShaFromTag
 Source/Git/git-info:_t4dSrcGitInfoGetPRMerged
 Source/Git/git-info:_t4dSrcGitInfoBranchStatus
+Source/Git/git-info:_t4dSrcGitInfoLastTag
 Source/Git/git-utils:_t4dSrcGitUtilsLoadCompletion
 Source/Git/git-utils:_t4dSrcGitUtilsGetVersionSuffix
 Source/Git/git-utils:_t4dSrcGitUtilsNormalizeCommitMessage
