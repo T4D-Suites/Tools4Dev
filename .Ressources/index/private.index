@@ -231,6 +231,7 @@ Source/Common/_team_:_t4dTeamGitServerSetBuildStatus
 Source/Common/_team_:_t4dTeamIrcSendNotif
 Source/Common/version:_t4dSrcBumpVersion
 Source/Common/version:_t4dSrcGetProjectVersion
+Source/Common/version:_t4dSrcVersionPatchGradleFile
 Source/Common/version:_t4dSrcVersionCodeGenerate
 Source/Common/version:_t4dSrcVersionCodeParse
 Source/Common/system:_t4dSystemBindKeys
