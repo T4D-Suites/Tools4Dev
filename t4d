@@ -2,7 +2,8 @@
 
 autoload -U colors &> /dev/null 
 colors &> /dev/null 
-export Tools4Dev_PATH="${Tools4Dev_PATH:-$HOME/.tools4dev/src}"
+export T4D_ROOT_PATH="${T4D_ROOT_PATH:-$HOME/.tools4dev}"
+export Tools4Dev_PATH="${Tools4Dev_PATH:-$T4D_ROOT_PATH/src}"
 function t4d-init() { source $T4D_ROOT_PATH/init }
 
 if [[ -e "$Tools4Dev_PATH/manifest.xml" ]]; then
@@ -47,29 +48,7 @@ case $1 in
     ;;
     install)
         set -e
-        cp -f "$HOME/.zshrc" "$HOME/.zshrc_" &&         echo "Tools4Dev  -> Old zshrc saved in $HOME/.zshrc_"
-
-        if [[ $2 == "append" ]]; then
-            ( cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc" ) 2> /dev/null
-            [[ ! -e "$T4D_USERS_PATH/$USER.env" ]] && cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "./Users/$USER.env" 
-        elif [[ $2 == "askMe" ]]; then
-            echo "================"
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g" 
-            echo ""
-            echo "================"
-            echo "Do you want this file to be written at the end of your $HOME/.zshrc ?"
-            echo "Enter to proceed, Ctrl+C to abort"
-            read answer
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc"
-            if [[ ! -e "$T4D_USERS_PATH/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "$T4D_USERS_PATH/$USER.env"
-            fi
-        else
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  > "$HOME/.zshrc" && echo "Tools4Dev  -> $Tools4Dev_PATH/Templates/zshrc.env copied in $HOME/.zshrc "
-            if [[ ! -e "$T4D_USERS_PATH/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user.env" "$T4D_USERS_PATH/$USER.env"
-            fi
-        fi
+        _t4dDebugLog $perror "Do not exist anymore"
     ;;
     uninstall)
         source $Tools4Dev_PATH/tools4Dev.env
@@ -128,6 +107,35 @@ case $1 in
         t4dLoadProjectConf &> /dev/null || t4dLoadProjectConf
         $@
     ;;
+    docker)
+        shift
+        cd $Tools4Dev_PATH 
+        mkdir -p $Tools4Dev_PATH/.t4d
+        if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+            T4D_CONTAINER_ID="$(cat $Tools4Dev_PATH/.t4d/.containerID)"
+        fi
+        case $1 in
+            build)
+                echo "docker build -t t4d ."
+                docker build -t t4d .
+            ;;
+            run)
+                docker run -dt t4d > $Tools4Dev_PATH/.t4d/.containerID
+            ;;
+            exec)
+                if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+                    docker exec -it $T4D_CONTAINER_ID zsh
+                fi
+            ;;
+            stop)
+                if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+                    docker stop $T4D_CONTAINER_ID
+                    rm $Tools4Dev_PATH/.t4d/.containerID
+                fi
+            ;;
+        esac
+    ;;
+
     -path|path)
         set -e
         cd $2
