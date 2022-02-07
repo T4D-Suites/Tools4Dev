@@ -26,7 +26,8 @@ Source/_main_:t4dClearEnv
 Source/_main_:t4dMake
 Source/_main_:t4dLoadProjectConf
 Engine/Make/completion:t4dLoadCompletion
-Engine/G4d/templates:$_Name
+Engine/G4d/template-project:$_Name
 Engine/_main_:chf
+Engine/_main_:chm
 Engine/_main_:chp
 Engine/_main_:chl
