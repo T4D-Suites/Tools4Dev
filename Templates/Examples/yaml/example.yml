@@ -1,0 +1,114 @@
+---
+- name: Set up DB server
+  hosts: "{{ myhosts | default('dbservers') }}"
+  become: yes
+  vars_files:
+    - vars/global.yml
+  vars:
+      app1:
+          jvm: &jvm_opts
+              opts: '-Xms1G -Xmx2G'
+              port: 1000
+              path: /usr/lib/app1
+      app2:
+          jvm:
+              <<: *jvm_opts
+              path: /usr/lib/app2
+      webapp:
+        version: &my_version 1.0
+        custom_name:
+            - "ToDo_App"
+            - *my_version
+  roles:
+    - role: zabbix_server
+    - role: geerlingguy.apache
+    - role: wdijkerman.php
+    - role: zabbix_web
+
+  post_tasks:
+    - name: Create user group
+      connection: local
+      become: false
+      register: api_create_user_group
+      until: api_create_user_group is succeeded
+      community.zabbix.zabbix_usergroup:
+        server_url: "{{ zabbix_url }}"
+        login_user: "{{ zabbix_api_user }}"
+        login_password: "{{ zabbix_api_pass }}"
+        name: ops
+        state: present
+  
+  tasks:
+    - name: Using Anchor value
+      ansible.builtin.debug:
+        msg: My app is called "{{ webapp.custom_name | join('-') }}".
+        
+    - name: Deploy trigger action
+      connection: local
+      become: false
+      register: api_create_trigger
+      until: api_create_trigger is succeeded
+      community.zabbix.zabbix_action:
+        server_url: "{{ zabbix_url }}"
+        login_user: "{{ zabbix_api_user }}"
+        login_password: "{{ zabbix_api_pass }}"
+        name: "A: Send alerts to Admin"
+        event_source: 'trigger'
+        state: present
+        status: enabled
+        esc_period: "60"
+        conditions:
+          - type: 'trigger_severity'
+            operator: '>='
+            value: 'Information'
+        operations:
+          - type: send_message
+            subject: "Something bad is happening"
+            message: "Come on, guys do something"
+            media_type: 'Email'
+            send_to_groups:
+              - 'ops'
+
+    - name: create of zabbix user.
+      connection: local
+      become: false
+      register: api_create_user
+      until: api_create_user is succeeded
+      community.zabbix.zabbix_user:
+        server_url: "{{ zabbix_url }}"
+        login_user: "{{ zabbix_api_user }}"
+        login_password: "{{ zabbix_api_pass }}"
+        alias: wdijkerman
+        name: Werner
+        surname: Dijkerman
+        usrgrps:
+          - ops
+          - Zabbix administrators
+        passwd: password
+        lang: en_GB
+        theme: blue-theme
+        autologin: no
+        autologout: '0'
+        refresh: '30'
+        rows_per_page: '200'
+        after_login_url: ''
+        user_medias:
+          - mediatype: Email
+            sendto: wdijkerman@example.com
+            period: 1-7,00:00-24:00
+            severity:
+              not_classified: no
+              information: yes
+              warning: yes
+              average: yes
+              high: yes
+              disaster: yes
+            active: no
+        type: Zabbix super admin
+        state: present
+
+    - name: Restart Apache
+      service:
+        name: apache2
+        state: restarted
+
