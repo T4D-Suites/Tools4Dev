@@ -1,0 +1,5 @@
+---
+- name: SimpleTask
+  tasks:
+    - name: action
+      com.t4d: Test
