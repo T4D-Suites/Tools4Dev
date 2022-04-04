@@ -204,6 +204,7 @@ Source/Yalm/yalm-file:_t4dSrcYalmCloseFile
 Source/Yalm/yalm-serialize:_t4dSrcYalmSerialize
 Source/Yalm/yalm-serialize:_t4dSrcYalmDeSerialize
 Source/Yalm/yalm-serialize:_t4dSrcYalmPathSerialize
+Source/Yalm/yalm-serialize:_t4dSrcYalmPathDeSerialize
 Source/Yalm/_main_:_t4dSrcYalmLinter
 Source/Yalm/_main_:_t4dSrcYalmEdit
 Source/Yalm/_main_:_t4dSrcYalmReadFile
@@ -519,6 +520,7 @@ Engine/Make/test:_t4dTestSuiteEnd
 Engine/Make/test:_t4dTestGetClassName
 Engine/Make/_main_:_t4dMakeCompletion
 Engine/Make/_main_:_t4dMakeGeneratorTemplates
+Engine/Make/_main_:_t4dMakeGeneratorExample
 Engine/Make/_main_:_t4dMakeIndex
 Engine/Make/_main_:_t4dMakeSample
 Engine/Make/_main_:_t4dMakeStatistic
