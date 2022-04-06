@@ -329,3 +329,15 @@ _t4dPromptChart -data  "   A2   |      B2      "
 
 
 
+# _t4dSrcPromptDemo
+
+## Synopsis
+<p>return an output to show user what can be done with prompt functions</p>
+
+
+## Usage
+
+* `_t4dSrcPromptDemo        = See output example for _t4dPrompt Lib`
+
+
+

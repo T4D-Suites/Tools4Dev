@@ -81,4 +81,7 @@
 * [_t4dPromptChart](Log-prompt.md#_t4dPromptChart)
     utils that will return a preformated table
 
+* [_t4dSrcPromptDemo](Log-prompt.md#_t4dSrcPromptDemo)
+    return an output to show user what can be done with prompt functions
+
 
