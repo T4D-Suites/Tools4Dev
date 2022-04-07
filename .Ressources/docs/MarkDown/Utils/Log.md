@@ -60,6 +60,9 @@
 * [_t4dPromptListInfo](Log-prompt.md#_t4dPromptListInfo)
     Show a list of Variable name and contents
 
+* [_t4dPromptVarWithChar](Log-prompt.md#_t4dPromptVarWithChar)
+    Important and usefull method to fill variable with space to create a fixed lenght variable and generate pretty stdout blocks
+
 * [_t4dPromptVarCenterWithChar](Log-prompt.md#_t4dPromptVarCenterWithChar)
     Fill variable with char to create a fixed lenght variable with value at center
 

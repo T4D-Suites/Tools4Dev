@@ -216,6 +216,17 @@ _t4dPromptListInfo "<List of Variable Names>" 17 ":" $plyellow
 
 
 
+# _t4dPromptVarWithChar
+
+## Synopsis
+<p>Important and usefull method to fill variable with space to create a fixed lenght variable and generate pretty stdout blocks</p>
+
+
+## Usage
+_t4dPromptVarWithChar 10 "yourVariable" '.' | sed 's|%||g'
+
+
+
 # _t4dPromptVarCenterWithChar
 
 ## Synopsis
