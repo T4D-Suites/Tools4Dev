@@ -1,6 +1,6 @@
 ---
 - name: Set up DB server
-  hosts: "{{ myhosts | default('dbservers') }}"
+  hosts: "{{ myhosts | default(':dbservers') }}"
   become: yes
   vars_files:
     - vars/global.yml

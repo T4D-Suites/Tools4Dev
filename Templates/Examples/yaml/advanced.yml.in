@@ -1,6 +1,6 @@
 |---|0|OTHER||
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~|Set§SPACE§up§SPACE§DB§SPACE§server|0|LIST|name|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.hosts|§DQUOTE§{{§SPACE§myhosts§SPACE§§PIPE§§SPACE§default(§SQUOTE§dbservers§SQUOTE§)§SPACE§}}§DQUOTE§|2|KEY|hosts|§DASH§
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.hosts|§DQUOTE§{{§SPACE§myhosts§SPACE§§PIPE§§SPACE§default(§SQUOTE§§DASH§dbservers§SQUOTE§)§SPACE§}}§DQUOTE§|2|KEY|hosts|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.become|yes|2|KEY|become|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files||2|KEY|vars_files|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files>vars/global§DOT§yml||4|LIST|vars/global§DOT§yml|
