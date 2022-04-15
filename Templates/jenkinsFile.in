@@ -36,7 +36,7 @@ env.M_NotificationLvl=@JENKINS_NOTIFICATION_LVL@
 M_BuildTarget.remove("Init")
 
 job.start()
-pipeline.workspace(M_BuildTarget,"Configure","start")
+pipeline.workspace(M_BuildTarget,"SCM","start")
 
 //@Exec@
 
