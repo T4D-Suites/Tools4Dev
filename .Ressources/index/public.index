@@ -1,9 +1,9 @@
 #INDEX
-Modules/jic/_main_:jic
-Modules/jks/_main_:jks
-Modules/gik/_main_:gik
 Modules/bb8/_main_:bb8
 Modules/bpi/_main_:bpi
+Modules/gik/_main_:gik
+Modules/jic/_main_:jic
+Modules/jks/_main_:jks
 Source/Common/_project_:findDataInXML
 Source/Common/_project_:findTypeInXML
 Source/Common/_project_:wkd
@@ -25,8 +25,8 @@ Source/_main_:t4dLoadFile
 Source/_main_:t4dClearEnv
 Source/_main_:t4dMake
 Source/_main_:t4dLoadProjectConf
-Engine/Make/completion:t4dLoadCompletion
 Engine/G4d/templates:$_Name
+Engine/Make/completion:t4dLoadCompletion
 Engine/_main_:chf
 Engine/_main_:chp
 Engine/_main_:chl

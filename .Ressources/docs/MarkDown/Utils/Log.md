@@ -3,6 +3,9 @@
 * [_t4dCheckFile](Log-checkIfExist.md#_t4dCheckFile)
     check if file exist then return normalized output
 
+* [_t4dCheckVariable](Log-checkIfExist.md#_t4dCheckVariable)
+    check if variable is not empty
+
 * [_t4dCheckFunction](Log-checkIfExist.md#_t4dCheckFunction)
     check if sended argument is an actual defined shell function
 
