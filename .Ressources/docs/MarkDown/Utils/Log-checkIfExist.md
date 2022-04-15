@@ -229,6 +229,13 @@ Please see _t4dCheckBinaryVersion documentation to see exact output
 
 
 
+# _t4dCheckPackage
+
+## Synopsis
+<p>Check for package installed on fedora only</p>
+
+
+
 # _t4dCheckBinary
 
 ## Synopsis
@@ -337,6 +344,13 @@ _t4dCheckBinaryVersion <Name> <BinaryParsedVersion> <Version>
 
 
 </p>
+
+
+
+# _t4dCheckOSXApp
+
+## Synopsis
+<p>check for OSX app installed</p>
 
 
 
