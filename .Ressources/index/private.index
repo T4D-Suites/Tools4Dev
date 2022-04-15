@@ -278,6 +278,9 @@ Source/Common/json:_t4dGetJsonTabSize
 Source/Common/json:_t4dRemoveDataFromJson
 Source/Common/variable:_t4dSystemSetVariable
 Source/Common/variable:_t4dVarGetValue
+Source/Common/variable:_t4dVarFileGetVarsGroup
+Source/Common/variable:_t4dVarFileSetVarInGroup
+Source/Common/variable:_t4dVarFileGetGroup
 Source/Common/variable:_t4dVarSetInFile
 Source/Common/variable:_t4dVarConvertToCamelCase
 Source/Common/variable:_t4dVarRemoveMaj
