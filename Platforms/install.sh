@@ -128,10 +128,16 @@ config_shell(){
 config_zshrc(){
     local _prefix
     local _path="${1:-$HOME}"
+    local _oldZshrc=".zshrc_$(date +%Y-%m-%d_%H-%M-%S)"
 
     if [[ -e "$_path/.zshrc" ]]; then
-        _t4dDebugLog $plog "Creating $_path/.zshrc file backup in $T4D_ROOT_PATH/.zshrc_"
-        cp -f "$_path/.zshrc" "$T4D_ROOT_PATH/.zshrc_"
+        _t4dDebugLog $plog "Creating $_path/.zshrc backup's file in $T4D_ROOT_PATH/$_oldZshrc"
+        if [[ -e "$HOME/.oh-my-zsh" ]]; then
+            local _answer
+            echo "Press Enter to continue, Ctrl+C to abort"
+            read -k 1 _answer
+        fi
+        cp -f "$_path/.zshrc" "$T4D_ROOT_PATH/$_oldZshrc"
     fi
 
     if [[ "$KEEP_ZSHRC" == "false" ]]; then

@@ -11,9 +11,6 @@ COPY . .
 COPY .Ressources .
 
 
-# Make ssh dir
-RUN mkdir /root/.ssh/
-
 RUN SKIP_T4D_CLONE=true ./Platforms/install.sh
 
 RUN ./t4d wks make
