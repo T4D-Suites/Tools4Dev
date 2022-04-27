@@ -21,6 +21,9 @@
 * [_t4dCheckVersion](Log-checkIfExist.md#_t4dCheckVersion)
     check Tools4Dev version with sended and send normalized output
 
+* [_t4dCheckPackage](Log-checkIfExist.md#_t4dCheckPackage)
+    Check for package installed on fedora only
+
 * [_t4dCheckBinary](Log-checkIfExist.md#_t4dCheckBinary)
     DEPRECATED - see _t4dCheckCommand
 
@@ -29,6 +32,9 @@
 
 * [_t4dCheckBinaryVersion](Log-checkIfExist.md#_t4dCheckBinaryVersion)
     Utilitary that compare binary version and send normalized output
+
+* [_t4dCheckOSXApp](Log-checkIfExist.md#_t4dCheckOSXApp)
+    check for OSX app installed
 
 
 ### colors
