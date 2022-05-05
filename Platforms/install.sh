@@ -180,6 +180,7 @@ config_root(){
 }
 
 wks_clone(){
+    mkdir -p $Tools4Dev_PATH/Team
     if [[ "$T4D_MANIFEST" != "" ]]; then
         if [[ -e "$T4D_MANIFEST" ]]; then
             _t4dDebugLog $plog "Using $T4D_MANIFEST as manifest.xml"
@@ -190,7 +191,6 @@ wks_clone(){
             ln -sfn "$Tools4Dev_PATH/.t4d-manifest.xml" "$Tools4Dev_PATH/manifest.xml"
         else
             _t4dDebugLog $pwarning "Unknown type of manifest.xml file - $T4D_MANIFEST -"
-            mkdir -p $Tools4Dev_PATH/Team
             _t4dDebugLog $plog "Initializing $Tools4Dev_PATH/Team/Minimal"
             cp -rf $Tools4Dev_PATH/Templates/Team-New $Tools4Dev_PATH/Team/Minimal
             ln -sfn "$Tools4Dev_PATH/Team/Minimal/t4d-manifest.xml" "$Tools4Dev_PATH/manifest.xml"
