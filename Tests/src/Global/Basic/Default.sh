@@ -1,5 +1,4 @@
 #! /bin/zsh
-
 source $Tools4Dev_PATH/project.env &> /dev/null
 
 local _BaseName="$(_t4dTestGetClassName $0)"
