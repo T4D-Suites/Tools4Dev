@@ -106,6 +106,51 @@ Usage:
 
 
 
+# _t4dPromptObjectEndOfLine
+
+## Synopsis
+<p>Will write  at the end of line of your term</p>
+
+
+## Usage
+
+* `_t4dPromptEndOfLine <string> **colorCode** **remove n char**     = print string at end of line`
+
+
+## Example
+<p>
+
+* _t4dPromptObjectEndOfLine "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"   
+
+>  print square in purple at end of line removing 15 char
+
+
+</p>
+
+
+
+# _t4dPromptObjectCenter
+
+## Synopsis
+<p>Will write  at the end of line of your term</p>
+
+
+## Usage
+_t4dPromptObjectCenter <string> **colorCode** **remove n char**
+
+
+## Example
+<p>
+
+* _t4dPromptObjectCenter "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"
+
+> * _t4dPromptObjectCenter "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"
+
+
+</p>
+
+
+
 # _t4dPromptIndent
 
 ## Synopsis
@@ -270,15 +315,51 @@ Can be used anywhere in your code in order to generated a pretty console output
 
 
 ## Usage
-_t4dPromptSquare **Options** <Args>
+
+* `_t4dPromptSquare **Options** <Args>`
 
 
 ## Available Options
---no-color          = Remove all color code from output, used to write data in file
+* --no-color          = Remove all color code from output, used to write data in file
 
 
 ## Example
 <p>
+
+* _t4dPromptSquare --no-color 'taratata'
+
+> * _t4dPromptSquare --no-color 'taratata'
+
+
+* _t4dColorDisabled _t4dPromptSquare 'taratata'
+
+> * _t4dColorDisabled _t4dPromptSquare 'taratata'
+
+
+* _t4dPromptSquare 'taratata'
+
+> * _t4dPromptSquare 'taratata'
+
+
+* _t4dPromptSquare 'taratata' $plblue
+
+> * _t4dPromptSquare 'taratata' $plblue
+
+
+* _t4dPromptSquare 'My Name is __%HAMTARO%%'
+
+> * _t4dPromptSquare 'My Name is __%HAMTARO%%'
+
+
+* _t4dPromptSquare 'My Name is __%HAMTARO%%' $plblue $plpurple
+
+> * _t4dPromptSquare 'My Name is __%HAMTARO%%' $plblue $plpurple
+
+
+* _t4dPromptSquare "My Name is __%HAMTARO%__
+
+> * _t4dPromptSquare "My Name is __%HAMTARO%__
+
 
 </p>
 

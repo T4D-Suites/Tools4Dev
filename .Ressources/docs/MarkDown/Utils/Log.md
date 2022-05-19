@@ -57,6 +57,12 @@
 * [_t4dPromptEndOfLine](Log-prompt.md#_t4dPromptEndOfLine)
     Will write $1 at the end of line of your term
 
+* [_t4dPromptObjectEndOfLine](Log-prompt.md#_t4dPromptObjectEndOfLine)
+    Will write  at the end of line of your term
+
+* [_t4dPromptObjectCenter](Log-prompt.md#_t4dPromptObjectCenter)
+    Will write  at the end of line of your term
+
 * [_t4dPromptIndent](Log-prompt.md#_t4dPromptIndent)
     |One-line description of what it does. (less than 55 char)|
 

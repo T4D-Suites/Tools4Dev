@@ -265,6 +265,7 @@ Source/Common/variable:_t4dVarFileGetVarsGroup
 Source/Common/variable:_t4dVarFileSetVarInGroup
 Source/Common/variable:_t4dVarGetMax
 Source/Common/variable:_t4dVarGetMaxSize
+Source/Common/variable:_t4dVarGetPrefixFromVar
 Source/Common/variable:_t4dVarGetValue
 Source/Common/variable:_t4dVarRemoveMaj
 Source/Common/variable:_t4dVarSetInFile
