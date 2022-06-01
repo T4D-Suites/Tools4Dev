@@ -276,7 +276,6 @@ Source/Common/_team_:_t4dTeamGitServerSetBuildStatus
 Source/Common/_team_:_t4dTeamIrcSendNotif
 Source/Common/_tools_:_t4dMakeAll
 Source/Common/_tools_:_t4dMakeTools
-Source/Common/variable:_t4dGetVarContent
 Source/Common/variable:_t4dSystemSetVariable
 Source/Common/variable:_t4dSystemSourceFile
 Source/Common/variable:_t4dSystemVariableIsInList

@@ -1,6 +1,5 @@
 -state
--repo
--key
+-project
 -branch
 -tag
 -order

@@ -1,7 +1,7 @@
 -state
--role
+-scope
 -p
--o
+-order
 -l
 -t
 -f
