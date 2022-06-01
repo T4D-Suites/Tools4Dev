@@ -9,6 +9,7 @@ Users
 .bitbucket/*
 .log
 .*.env
+.t4d-manifest.xm
 
 .clone
 .*.tmp
@@ -32,3 +33,5 @@ Modules/*
 !Modules/jks
 !Modules/bpi
 !Modules/jic
+
+Utils
