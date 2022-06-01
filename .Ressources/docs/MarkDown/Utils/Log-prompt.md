@@ -3,6 +3,154 @@
     <img src="https://github.com/T4D-Suites/T4D-Ressources/blob/master/LogoT4D.png">
 </p>
 
+# _t4dPromptLine
+
+## Synopsis
+<p>Will read your term Length create a line with =</p>
+
+
+## Usage
+
+* `{Name} <option>  **arguments**        = {One-Line Description}`
+
+
+## Example
+<p>
+
+* {Example1}              
+
+>  {One-Line Description}
+
+
+</p>
+
+
+
+# _t4dPromptLineChar
+
+## Synopsis
+<p>Will read your term Length create a line with char send in $1</p>
+
+
+## Usage
+
+* `_t4dPromptLineChar <char> **color**        = fill line with char and colorize it`
+
+
+## Example
+<p>
+
+* {Example1}              
+
+>  {One-Line Description}
+
+
+</p>
+
+
+
+# _t4dPromptEndOfLine
+
+## Synopsis
+<p>Will write $1 at the end of line of your term</p>
+
+
+## Usage
+
+* `_t4dPromptEndOfLine <string> **colorCode** **remove n char**`
+
+Usage:
+
+
+* `_t4dPromptEndOfLine toto`
+
+
+* `_t4dPromptEndOfLine toto $plblue`
+
+
+* `_t4dPromptEndOfLine toto $plblue 20`
+
+- Note:
+
+<Required>
+
+
+* `**Optionnal**`
+
+{XXXXXXX}       = Value To Be Changed, if {URL} then replace {URL} with a valid URL
+
+
+## Usage
+
+* `_t4dPromptEndOfLine <string> **colorCode** **remove n char**`
+
+Usage:
+
+
+* `_t4dPromptEndOfLine toto`
+
+
+* `_t4dPromptEndOfLine toto $plblue`
+
+
+* `_t4dPromptEndOfLine toto $plblue 20`
+
+- Note:
+
+<Required>
+
+
+* `**Optionnal**`
+
+{XXXXXXX}       = Value To Be Changed, if {URL} then replace {URL} with a valid URL
+
+
+
+# _t4dPromptObjectEndOfLine
+
+## Synopsis
+<p>Will write  at the end of line of your term</p>
+
+
+## Usage
+
+* `_t4dPromptEndOfLine <string> **colorCode** **remove n char**     = print string at end of line`
+
+
+## Example
+<p>
+
+* _t4dPromptObjectEndOfLine "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"   
+
+>  print square in purple at end of line removing 15 char
+
+
+</p>
+
+
+
+# _t4dPromptObjectCenter
+
+## Synopsis
+<p>Will write  at the end of line of your term</p>
+
+
+## Usage
+_t4dPromptObjectCenter <string> **colorCode** **remove n char**
+
+
+## Example
+<p>
+
+* _t4dPromptObjectCenter "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"
+
+> * _t4dPromptObjectCenter "$(_t4dPromptSquare --no-color 'BUILD INFO')" "$plpurple" "15"
+
+
+</p>
+
+
+
 # _t4dPromptIndent
 
 ## Synopsis
@@ -22,6 +170,39 @@ _t4dPromptIndent <NumberOfIndent> <Content>
 
 ## Example
 <p>
+
+</p>
+
+
+
+# _t4dPromptCentralLine
+
+## Synopsis
+<p>Will read your term Length create a line with char send in $1</p>
+
+
+## Usage
+
+* `_t4dPromptCentralLine **color**        = create central line with color`
+
+
+## Example
+<p>
+
+* _t4dPromptCentralLine                      
+
+>  Default behavior
+
+
+* _t4dPromptCentralLine $plblue              
+
+>  Central line in blue
+
+
+* _t4dPromptCentralLine $plblue  toto        
+
+>  Central line in blue with toto at end
+
 
 </p>
 
@@ -80,6 +261,17 @@ _t4dPromptListInfo "<List of Variable Names>" 17 ":" $plyellow
 
 
 
+# _t4dPromptVarWithChar
+
+## Synopsis
+<p>Important and usefull method to fill variable with space to create a fixed lenght variable and generate pretty stdout blocks</p>
+
+
+## Usage
+_t4dPromptVarWithChar 10 "yourVariable" '.' | sed 's|%||g'
+
+
+
 # _t4dPromptVarCenterWithChar
 
 ## Synopsis
@@ -123,15 +315,51 @@ Can be used anywhere in your code in order to generated a pretty console output
 
 
 ## Usage
-_t4dPromptSquare **Options** <Args>
+
+* `_t4dPromptSquare **Options** <Args>`
 
 
 ## Available Options
---no-color          = Remove all color code from output, used to write data in file
+* --no-color          = Remove all color code from output, used to write data in file
 
 
 ## Example
 <p>
+
+* _t4dPromptSquare --no-color 'taratata'
+
+> * _t4dPromptSquare --no-color 'taratata'
+
+
+* _t4dColorDisabled _t4dPromptSquare 'taratata'
+
+> * _t4dColorDisabled _t4dPromptSquare 'taratata'
+
+
+* _t4dPromptSquare 'taratata'
+
+> * _t4dPromptSquare 'taratata'
+
+
+* _t4dPromptSquare 'taratata' $plblue
+
+> * _t4dPromptSquare 'taratata' $plblue
+
+
+* _t4dPromptSquare 'My Name is __%HAMTARO%%'
+
+> * _t4dPromptSquare 'My Name is __%HAMTARO%%'
+
+
+* _t4dPromptSquare 'My Name is __%HAMTARO%%' $plblue $plpurple
+
+> * _t4dPromptSquare 'My Name is __%HAMTARO%%' $plblue $plpurple
+
+
+* _t4dPromptSquare "My Name is __%HAMTARO%__
+
+> * _t4dPromptSquare "My Name is __%HAMTARO%__
+
 
 </p>
 
@@ -190,6 +418,18 @@ _t4dPromptChart -data  "   A2   |      B2      "
 <p>
 
 </p>
+
+
+
+# _t4dSrcPromptDemo
+
+## Synopsis
+<p>return an output to show user what can be done with prompt functions</p>
+
+
+## Usage
+
+* `_t4dSrcPromptDemo        = See output example for _t4dPrompt Lib`
 
 
 

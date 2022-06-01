@@ -1,0 +1,46 @@
+#!/usr/bin/env groovy
+@Library('@JENKINS_LIB_VERSION@')
+// ///////////////////////////////////////////
+import library.Main.*
+// import hudson.model.*
+import hudson.EnvVars
+import groovy.transform.Field
+// ///////////////////////////////////////////
+def job = new api.job()
+def pipeline = new api.pipeline.sequential()
+// ///////////////////////////////////////////
+M_BuildTarget=["Init"]
+//////////////////
+env.M_Project="@PROJECT_NAME@"
+env.M_RepositoryUrl="@GIT_REPOSITORY@"
+env.M_NotificationLvl=@JENKINS_NOTIFICATION_LVL@
+//@Env@
+//M_NotificationLvl0->Only Notif when build is failing
+//M_NotificationLvl1->Notif only when build is finished
+//M_NotificationLvl2->Notif Start + Build finished
+//M_NotificationLvl3->LVL2 + Warning
+//M_NotificationLvl4->Jenkins Log Lvl
+
+
+// properties([
+//     parameters([
+//         string(defaultValue: ""    , description: ""      , name: "IrcChannel", trim: true),
+//     ])
+// ])
+
+// env.M_IrcChannel="${params.IrcChannel}"
+
+
+//@Target@
+
+M_BuildTarget.remove("Init")
+
+job.start()
+pipeline.workspace(M_BuildTarget,"SCM","start")
+
+//@Exec@
+
+pipeline.workspace(M_BuildTarget,"End","end")
+
+
+

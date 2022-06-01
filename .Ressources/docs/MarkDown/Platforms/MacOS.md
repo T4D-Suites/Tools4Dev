@@ -16,8 +16,7 @@
 
 ## Dependencies
 ```
-brew install git-lfs zsh jq coreutils
-git-lfs install
+brew install zsh jq coreutils
 ```
 
 

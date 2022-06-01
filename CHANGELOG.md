@@ -63,3 +63,47 @@
 ## 5.4.0
 - **feature**    bb8 - add gitlab support
 - _improvements_ jic - improve how jira password is set
+
+## 6.0.0
+- **feature**    bb8 - add gitlab support
+- _improvements_ jks - new options init and update-lib
+- **chore**     remove git-lfs from deps
+- **chore**     _t4dCheckOSXApp - check for OSX app installed
+- **chore**     _t4dCheckPackage - Check for package installed on fedora only
+- documentation  _t4dPrompt - Update old documentation
+- **chore**     _t4dSrcPromptDemo - return an output to show user what can be done with prompt functions
+- **bugfix**     index is now sorted properly in fedora & osx
+- **chore**     modules folder will now be ignored by default
+- **chore**     add Dockerfile
+- _improvements_ t4d make will now generated doc and autocomp of all external modules
+- **feature**    chm - new function to generate new module
+- **chore**     _t4dCheckVariable - check if variable is not empty
+- **chore**     _t4dMakeGeneratorExample - generate yaml example from templates
+- _improvements_ autocompletion for modules is now loaded automatically
+- _improvements_ t4d script autocompletion now available
+- _improvements_ chp - add a way to define vars in _variable_ file
+- _improvements_ bb8 - add log to know if bb8 is not found
+- _clean_        _t4dFindDataInXmlV2 - replaced by _t4dManifestXmlGetData
+- _clean_        _t4dFindMarkerInXML - replaced by _t4dManifestXmlGetMarker
+- _clean_        _t4dFindXml.. - replaced by _t4dManifestXml..
+- _improvements_ gik - add T4D_MANIFEST_PROJECTS to be able to gik only a sub-set of repository
+- **bugfix**     _t4dPromptVarWithSpace - fixed depending on platform
+- **bugfix**     jks - buildWithParams fixed on jenkins 2.321
+- **bugfix**     jks - buildWithParams fixed on jenkins 2.3+
+- _improvements_ osx - add /opt/homebrew/bin to path automatically
+- **bugfix**     INSTALL - fix zshrc setup + manifest on install
+- **chore**     _t4dSrcAnsibleInventory - manage Ansible Inventory
+- **chore**     Yaml - add support of yaml file management
+- _improvements_ wkd - add team argument that will cd to T4D_TEAM_ROOT folder
+- **chore**     _t4dJsonSetData - edit data from json
+- **chore**     _t4dPlistSetStringValue - edit key in plist file
+- **chore**     t4d.properties - handle properties file management
+- **chore**     _t4dSystemGetOsArch - return OS arch
+- **chore**     _t4dSrcVersionPatchGradleFile - patch gradle file to replace versionName value
+- **chore**     WIP - _t4dSrcGitGenerateManifestConfig
+- **chore**     _t4dSrcGitInfoLastTag - use git describe to retreive last tag information from log
+- **bugfix**     oh-my-zsh - Avoid loading git-completions as it might broke zsh plugins
+- _improvements_ jks startWithParams - handle choice properties
+- **chore**     WIP - _t4dSrcYamlEdit
+- _improvements_ T4D_NOTIFICATION - disable t4dCheckForUpdate if set to false
+- **feature**    t4d - new options docker + clone

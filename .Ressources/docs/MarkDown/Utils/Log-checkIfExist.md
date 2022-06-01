@@ -29,6 +29,32 @@ if file does not exist will execute _t4dCheckFailed & return 1
 
 
 
+# _t4dCheckVariable
+
+## Synopsis
+<p>check if variable is not empty</p>
+
+
+## Definition
+<p>
+
+if variable is not empty will execute _t4dCheckSucceeded & return 0
+if variable is empty will execute _t4dCheckFailed & return 1
+</p>
+
+
+## Example
+<p>
+
+* _t4dCheckVariable $WS_ROOT            
+
+>  check if variable $WS_ROOT is not empty
+
+
+</p>
+
+
+
 # _t4dCheckFunction
 
 ## Synopsis
@@ -203,6 +229,13 @@ Please see _t4dCheckBinaryVersion documentation to see exact output
 
 
 
+# _t4dCheckPackage
+
+## Synopsis
+<p>Check for package installed on fedora only</p>
+
+
+
 # _t4dCheckBinary
 
 ## Synopsis
@@ -311,6 +344,13 @@ _t4dCheckBinaryVersion <Name> <BinaryParsedVersion> <Version>
 
 
 </p>
+
+
+
+# _t4dCheckOSXApp
+
+## Synopsis
+<p>check for OSX app installed</p>
 
 
 

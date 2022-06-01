@@ -1,0 +1,10 @@
+-write
+-force
+-input
+-suffix
+-define
+-lib-version
+-param
+-M
+-target
+-exec

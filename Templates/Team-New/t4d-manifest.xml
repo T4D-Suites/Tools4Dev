@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <team name="Minimal" branch="main"/>
+    <remote name="origin" ssh="ssh://git@github.com" https="https://<user>:<password>@github.com" http="https://github.com"/>
+    <default key="T4D-Suites"    name="default"   remote="origin"      revision="master" />
+    <symbolic key="LOCAL" name="zshrc"      origin="$Tools4Dev_PATH/Team/Minimal/_t4d_/users" path="Users" />
+    <symbolic key="LOCAL" name="zshrc"      origin="$HOME/.zshrc"           path="$WS_ROOT/.zshrc" />
+    <symbolic key="LOCAL" name="t4d"        origin="$Tools4Dev_PATH/t4d"    path="$T4D_ROOT_PATH/bin/t4d" />
+    <symbolic key="LOCAL" name="init"       origin="$Tools4Dev_PATH/Templates/init.env" path="$T4D_ROOT_PATH/init" />
+</manifest>

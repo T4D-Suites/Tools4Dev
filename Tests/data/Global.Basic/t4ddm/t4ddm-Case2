@@ -1,44 +1,72 @@
 +t4ddm:3:then> eval _t4dPromptSquare \''taratata'\'
 +(eval):1:then> _t4dPromptSquare taratata
-+_t4dPromptSquare:3:> _t4dDebugInfoStart _t4dPromptSquare 1 taratata
-+_t4dDebugInfoStart:1:> T4D_DEBUG_MODE=FALSE 
-+_t4dPromptSquare:44:> local _res=''
-+_t4dPromptSquare:45:> local _Pairspace=''
-+_t4dPromptSquare:46:if> [[ taratata == --no-color ]]
-+_t4dPromptSquare:52:else> local _color='\033[1;31m'
-+_t4dPromptSquare:53:else> local _additionnalColor='\033[1;36m'
-+_t4dPromptSquare:56:if> [[ '\033[1;36m' ==  ]]
-+_t4dPromptSquare:56:if cmdor> [[ '\033[1;36m' ==  ]]
-+_t4dPromptSquare:60:else cmdsubst> echo taratata
-+_t4dPromptSquare:60:else cmdsubst pipe> sed 's|%%||g'
-+_t4dPromptSquare:60:else> local _variable=taratata
-+_t4dPromptSquare:61:else cmdsubst> echo taratata
-+_t4dPromptSquare:61:else cmdsubst pipe> sed 's|%%|\\033[1;36m|'
-+_t4dPromptSquare:61:else cmdsubst pipe pipe> sed 's|%%|\\033[1;31m|'
-+_t4dPromptSquare:61:else> local _outputvariable=taratata
-+_t4dPromptSquare:64:cmdsubst cmdsubst cmdsubst> expr 8 + 5
-+_t4dPromptSquare:64:cmdsubst cmdsubst> expr 13 / 2
-+_t4dPromptSquare:64:cmdsubst> seq 1 6
-+_t4dPromptSquare:64:for> _numero=1
-+_t4dPromptSquare:65:for> _res=+- 
-+_t4dPromptSquare:64:for> _numero=2
-+_t4dPromptSquare:65:for> _res=+-+- 
-+_t4dPromptSquare:64:for> _numero=3
-+_t4dPromptSquare:65:for> _res=+-+-+- 
-+_t4dPromptSquare:64:for> _numero=4
-+_t4dPromptSquare:65:for> _res=+-+-+-+- 
-+_t4dPromptSquare:64:for> _numero=5
-+_t4dPromptSquare:65:for> _res=+-+-+-+-+- 
-+_t4dPromptSquare:64:for> _numero=6
-+_t4dPromptSquare:65:for> _res=+-+-+-+-+-+- 
-+_t4dPromptSquare:67:if> [[+_t4dPromptSquare:67:if cond cmdsubst> expr 8 % 2
-+_t4dPromptSquare:67:if> [[ 0 == 1 ]]
-+_t4dPromptSquare:70:else> _Pairspace=' ' 
-+_t4dPromptSquare:72:> echo '\033[1;31m+-+-+-+-+-+-+\033[m'
++_t4dPromptSquare:42:> local _t4dErrorCode=1
++_t4dPromptSquare:43:> local _res=+
++_t4dPromptSquare:44:> local _Pairspace=' '
++_t4dPromptSquare:45:> local _additionnalColor=''
++_t4dPromptSquare:46:> local _color=''
++_t4dPromptSquare:48:if> [[ taratata == --no-color ]]
++_t4dPromptSquare:52:else> _color='\033[1;31m' 
++_t4dPromptSquare:53:else if> [[+_t4dPromptSquare:53:else if cond cmdsubst> echo taratata
++_t4dPromptSquare:53:else if> [[+_t4dPromptSquare:53:else if cond cmdsubst pipe> grep %%
++_t4dPromptSquare:53:else if> [[ '' !=  ]]
++_t4dPromptSquare:58:cmdsubst> echo taratata
++_t4dPromptSquare:58:cmdsubst pipe> sed 's|%%||g'
++_t4dPromptSquare:58:> local _variable=taratata
++_t4dPromptSquare:59:cmdsubst cmdsubst> echo taratata
++_t4dPromptSquare:59:cmdsubst cmdsubst pipe> sed 's| |_|g'
++_t4dPromptSquare:59:cmdsubst> _t4dVarGetMaxSize taratata
++_t4dVarGetMaxSize:15:> local _ListInt=''
++_t4dVarGetMaxSize:16:for> _word=taratata
++_t4dVarGetMaxSize:17:for> _ListInt=' 8' 
++_t4dVarGetMaxSize:19:cmdsubst> echo ' 8'
++_t4dVarGetMaxSize:19:> _t4dVarGetMax 8
++_t4dVarGetMax:22:> local _t4dErrorCode=1
++_t4dVarGetMax:23:> echo 8
++_t4dVarGetMax:23:pipe> sed 's| |\n|g'
++_t4dVarGetMax:23:pipe pipe> sort -nr
++_t4dVarGetMax:23:pipe pipe pipe> head -1
++_t4dPromptSquare:59:> local _varmaxSize=8
++_t4dPromptSquare:60:cmdsubst> echo taratata
++_t4dPromptSquare:60:> local _outputvariable=taratata
++_t4dPromptSquare:62:if> [[+_t4dPromptSquare:62:if cond cmdsubst> expr 8 % 2
++_t4dPromptSquare:62:if> [[ 0 == 1 ]]
++_t4dPromptSquare:66:cmdsubst cmdsubst> expr 8 + 5
++_t4dPromptSquare:66:cmdsubst> expr 13 / 2
++_t4dPromptSquare:66:> local _totalSize=6
++_t4dPromptSquare:67:cmdsubst> seq 1 6
++_t4dPromptSquare:67:for> _numero=1
++_t4dPromptSquare:68:for> _res=+-+ 
++_t4dPromptSquare:67:for> _numero=2
++_t4dPromptSquare:68:for> _res=+-+-+ 
++_t4dPromptSquare:67:for> _numero=3
++_t4dPromptSquare:68:for> _res=+-+-+-+ 
++_t4dPromptSquare:67:for> _numero=4
++_t4dPromptSquare:68:for> _res=+-+-+-+-+ 
++_t4dPromptSquare:67:for> _numero=5
++_t4dPromptSquare:68:for> _res=+-+-+-+-+-+ 
++_t4dPromptSquare:67:for> _numero=6
++_t4dPromptSquare:68:for> _res=+-+-+-+-+-+-+ 
++_t4dPromptSquare:71:> echo '\033[1;31m+-+-+-+-+-+-+\033[m'
 [1;31m+-+-+-+-+-+-+[m
-+_t4dPromptSquare:73:> echo '\033[1;31m+ taratata \033[1;31m +\033[m'
-[1;31m+ taratata [1;31m +[m
-+_t4dPromptSquare:74:> echo '\033[1;31m+-+-+-+-+-+-+\033[m'
++_t4dPromptSquare:73:> echo taratata
++_t4dPromptSquare:73:pipe while> read _line
++_t4dPromptSquare:74:pipe while if> [[ '' !=  ]]
++_t4dPromptVarWithSpaceAtEnd:3:> _t4dPromptVarWithChar 8 taratata ' '
++_t4dPromptVarWithChar:20:> local _res=''
++_t4dPromptVarWithChar:21:> local _Rev=false
++_t4dPromptVarWithChar:23:if> [[ 8 == -rev ]]
++_t4dPromptVarWithChar:27:> local _lenght=8
++_t4dPromptVarWithChar:28:> local _var=taratata
++_t4dPromptVarWithChar:29:> local _char=' '
++_t4dPromptSquare:78:pipe while else cmdsubst pipe> sed 's|%||g'
++_t4dPromptVarWithChar:30:cmdsubst> expr 8 - 8
++_t4dPromptVarWithChar:30:> local _counter=0
++_t4dPromptVarWithChar:32:if> [[ 0 -gt 0 ]]
++_t4dPromptVarWithChar:36:if> [[ false == true ]]
++_t4dPromptVarWithChar:40:else> echo %taratata%
++_t4dPromptSquare:78:pipe while else> echo '\033[1;31m+ taratata\033[1;31m  +\033[m'
+[1;31m+ taratata[1;31m  +[m
++_t4dPromptSquare:73:pipe while> read _line
++_t4dPromptSquare:82:> echo '\033[1;31m+-+-+-+-+-+-+\033[m'
 [1;31m+-+-+-+-+-+-+[m
-+_t4dPromptSquare:77:> _t4dDebugInfoEnd _t4dPromptSquare taratata
-+_t4dDebugInfoEnd:1:> T4D_DEBUG_MODE=FALSE 

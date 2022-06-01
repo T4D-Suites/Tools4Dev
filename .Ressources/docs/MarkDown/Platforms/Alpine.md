@@ -18,7 +18,7 @@
 Enable community repositories in /etc/apk/repositories then
 ```
 apk update && apk upgrade
-apk add zsh git git-lfs python2
+apk add zsh git python2
 ```
 
 

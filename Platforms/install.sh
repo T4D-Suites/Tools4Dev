@@ -77,20 +77,29 @@ _t4dCheckCommand(){
     return $_return
 }
 ############################
-_t4dCheckCommand zsh git git-lfs jq chsh curl
+_t4dCheckCommand zsh git jq chsh curl
 if [[ "$(uname -s)" == "Darwin" ]]; then
     _t4dCheckCommand gdate
 fi
 ############################
 
 T4D_REMOTE="${T4D_REMOTE:-"https://github.com/T4D-Suites/"}"
-T4D_BRANCH="${T4D_BRANCH:-main}"
+
 T4D_CLONE_ARGS="${T4D_CLONE_ARGS}"
 T4D_REPO="${T4D_REPO:-"Tools4Dev.git"}"
-T4D_MANIFEST="${T4D_MANIFEST:-"https://raw.githubusercontent.com/T4D-Suites/T4D-Team-Default/main/manifest.xml"}"
+T4D_MANIFEST="${T4D_MANIFEST:-none}"
+
+if [[ -e $T4D_MANIFEST ]]; then
+    DEFAULT_T4D_BRANCH="$(cat $T4D_MANIFEST | grep '<team' | grep -Eo "branch=.*" | cut -d '=' -f2 | cut -d '"' -f2)"
+else
+    DEFAULT_T4D_BRANCH="${T4D_BRANCH:-main}"
+fi
+
+T4D_BRANCH="${DEFAULT_T4D_BRANCH:-main}"
 T4D_ROOT_PATH="${T4D_ROOT_PATH:-"$HOME/.tools4dev"}"
 Tools4Dev_PATH="${T4D_ROOT_PATH}/src"
 INSTALL_ROOT="${INSTALL_ROOT:-false}"
+SKIP_T4D_CLONE="${SKIP_T4D_CLONE:-false}"
 T4D_NATIVE="${T4D_NATIVE:-true}"
 CSH="${CSH:-true}"
 KEEP_ZSHRC="${KEEP_ZSHRC:-false}"
@@ -119,10 +128,16 @@ config_shell(){
 config_zshrc(){
     local _prefix
     local _path="${1:-$HOME}"
+    local _oldZshrc=".zshrc_$(date +%Y-%m-%d_%H-%M-%S)"
 
     if [[ -e "$_path/.zshrc" ]]; then
-        _t4dDebugLog $plog "Creating $_path/.zshrc file backup in $T4D_ROOT_PATH/.zshrc_"
-        cp -f "$_path/.zshrc" "$T4D_ROOT_PATH/.zshrc_"
+        _t4dDebugLog $plog "Creating $_path/.zshrc backup's file in $T4D_ROOT_PATH/$_oldZshrc"
+        if [[ -e "$HOME/.oh-my-zsh" ]]; then
+            local _answer
+            echo "Press Enter to continue, Ctrl+C to abort"
+            read -k 1 _answer
+        fi
+        cp -f "$_path/.zshrc" "$T4D_ROOT_PATH/$_oldZshrc"
     fi
 
     if [[ "$KEEP_ZSHRC" == "false" ]]; then
@@ -165,15 +180,20 @@ config_root(){
 }
 
 wks_clone(){
+    mkdir -p $Tools4Dev_PATH/Team
     if [[ "$T4D_MANIFEST" != "" ]]; then
         if [[ -e "$T4D_MANIFEST" ]]; then
             _t4dDebugLog $plog "Using $T4D_MANIFEST as manifest.xml"
-            cp -f "$T4D_MANIFEST" "$Tools4Dev_PATH/manifest.xml"
+            ln -sfn "$T4D_MANIFEST" "$Tools4Dev_PATH/manifest.xml"
         elif [[ "$(echo $T4D_MANIFEST | grep '^http')" != "" ]]; then
             _t4dDebugLog $plog "Downloading $T4D_MANIFEST as manifest.xml"
-            curl -fsSl "$T4D_MANIFEST" > "$Tools4Dev_PATH/manifest.xml"
+            curl -fsSl "$T4D_MANIFEST" > "$Tools4Dev_PATH/.t4d-manifest.xml"
+            ln -sfn "$Tools4Dev_PATH/.t4d-manifest.xml" "$Tools4Dev_PATH/manifest.xml"
         else
             _t4dDebugLog $pwarning "Unknown type of manifest.xml file - $T4D_MANIFEST -"
+            _t4dDebugLog $plog "Initializing $Tools4Dev_PATH/Team/Minimal"
+            cp -rf $Tools4Dev_PATH/Templates/Team-New $Tools4Dev_PATH/Team/Minimal
+            ln -sfn "$Tools4Dev_PATH/Team/Minimal/t4d-manifest.xml" "$Tools4Dev_PATH/manifest.xml"
         fi
         cd $Tools4Dev_PATH
         zsh -c "$Tools4Dev_PATH/t4d wks clone $(echo $T4D_CLONE_ARGS)"
@@ -196,6 +216,8 @@ main(){
 
     if [[ ! -d "$T4D_ROOT_PATH" ]]; then
         install_tools4dev
+    elif [[ "$SKIP_T4D_CLONE" == "true" ]]; then
+        _t4dDebugLog $pskip "Folder $T4D_ROOT_PATH already exist"
     else
         _t4dDebugLog $pskip "Folder $T4D_ROOT_PATH already exist"
         return 1

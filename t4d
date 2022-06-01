@@ -2,7 +2,8 @@
 
 autoload -U colors &> /dev/null 
 colors &> /dev/null 
-export Tools4Dev_PATH="${Tools4Dev_PATH:-$HOME/.tools4dev/src}"
+export T4D_ROOT_PATH="${T4D_ROOT_PATH:-$HOME/.tools4dev}"
+export Tools4Dev_PATH="${Tools4Dev_PATH:-$T4D_ROOT_PATH/src}"
 function t4d-init() { source $T4D_ROOT_PATH/init }
 
 if [[ -e "$Tools4Dev_PATH/manifest.xml" ]]; then
@@ -12,31 +13,42 @@ fi
 export T4D_SILENT_COMMAND=true
 
 case $1 in
-    install)
-        set -e
-        cp -f "$HOME/.zshrc" "$HOME/.zshrc_" &&         echo "Tools4Dev  -> Old zshrc saved in $HOME/.zshrc_"
-
-        if [[ $2 == "append" ]]; then
-            ( cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc" ) 2> /dev/null
-            [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]] && cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "./Users/$USER.env" 
-        elif [[ $2 == "askMe" ]]; then
-            echo "================"
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g" 
-            echo ""
-            echo "================"
-            echo "Do you want this file to be written at the end of your $HOME/.zshrc ?"
-            echo "Enter to proceed, Ctrl+C to abort"
-            read answer
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  | tee -a "$HOME/.zshrc" && echo "Tools4Dev  -> Write content of $Tools4Dev_PATH/Templates/zshrc.env at the end of $HOME/.zshrc"
-            if [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user-OhMyZSH.env" "$Tools4Dev_PATH/Users/$USER.env"
+    team)
+        t4d-init &> /dev/null
+        if [[ "$2" == "-add" ]]; then
+            _TeamOriginalPath="$PWD"
+            if [[ -e "$_TeamOriginalPath/t4d-manifest.xml" ]]; then
+                export WS_TEAM="$(cat $_TeamOriginalPath/t4d-manifest.xml | grep '<team' | grep -Eo 'name=.*' | cut -d '"' -f2)"
+                if [[ ! -e "$Tools4Dev_PATH/Team/$WS_TEAM" ]]; then
+                    ln -sfn $_TeamOriginalPath $Tools4Dev_PATH/Team/$WS_TEAM
+                    ln -sfn $_TeamOriginalPath/t4d-manifest.xml $Tools4Dev_PATH/manifest.xml
+                    _t4dCheckSucceeded "Team $WS_TEAM added to Tools4Dev"
+                    _t4dDebugLog $pinfo "you can now use wkd to reload your environment"
+                else
+                    _t4dCheckInfo "Team $WS_TEAM already exist"
+                fi
+            else
+                _t4dDebugLog $perror "Folder >$_TeamOriginalPath< does not contain t4d-manifest.xml"
             fi
         else
-            cat "$Tools4Dev_PATH/Templates/zshrc.env" | sed "s|<TOOLS4DEV_PATH>|$Tools4Dev_PATH|g" | sed "s|<SHARED_WORKSPACE>|$SHARED_WORKSPACE|g"  > "$HOME/.zshrc" && echo "Tools4Dev  -> $Tools4Dev_PATH/Templates/zshrc.env copied in $HOME/.zshrc "
-            if [[ ! -e "$Tools4Dev_PATH/Users/$USER.env" ]]; then
-                cp -f "$Tools4Dev_PATH/Templates/user.env" "$Tools4Dev_PATH/Users/$USER.env"
+            local _TeamOriginalPath="$(readlink $Tools4Dev_PATH/Team/$2)"
+            if [[ "$_TeamOriginalPath" == "" ]]; then
+                _TeamOriginalPath="$Tools4Dev_PATH/Team/$2"
+            fi
+            if [[ -e "$_TeamOriginalPath/t4d-manifest.xml" ]] && [[ "$WS_TEAM" != "$2" ]]; then
+                ln -sfn $_TeamOriginalPath/t4d-manifest.xml $Tools4Dev_PATH/manifest.xml
+                _t4dDebugLog $plog "Tools4Dev is now linked to $2"
+                _t4dDebugLog $plog "Team folder is now $_TeamOriginalPath"
+                _t4dDebugLog $pinfo "you can now use wkd to reload your environment"
+            elif [[ "$WS_TEAM" == "$2" ]]; then
+                _t4dCheckSucceeded "Team $2 already setup in Tools4Dev"
             fi
         fi
+        
+    ;;
+    install)
+        set -e
+        _t4dDebugLog $perror "Do not exist anymore"
     ;;
     uninstall)
         source $Tools4Dev_PATH/tools4Dev.env
@@ -76,6 +88,15 @@ case $1 in
         # t4dLoadProjectConf &> /dev/null
         t4dUpdate ${@}
     ;;
+    clone)
+        set -e
+        shift
+        cd $Tools4Dev_PATH
+        t4d-init &> /dev/null || t4d-init
+        # t4dLoadProjectConf &> /dev/null
+        t4dUpdate ${@}
+        wks clone
+    ;;
     exec)
         set -e
         if [[ -e $PWD/project.env ]]; then
@@ -86,7 +107,36 @@ case $1 in
         t4dLoadProjectConf &> /dev/null || t4dLoadProjectConf
         $@
     ;;
-    -path)
+    docker)
+        shift
+        cd $Tools4Dev_PATH 
+        mkdir -p $Tools4Dev_PATH/.t4d
+        if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+            T4D_CONTAINER_ID="$(cat $Tools4Dev_PATH/.t4d/.containerID)"
+        fi
+        case $1 in
+            build)
+                echo "docker build -t t4d ."
+                docker build -t t4d .
+            ;;
+            run)
+                docker run -dt t4d > $Tools4Dev_PATH/.t4d/.containerID
+            ;;
+            exec)
+                if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+                    docker exec -it $T4D_CONTAINER_ID zsh
+                fi
+            ;;
+            stop)
+                if [[ -e "$Tools4Dev_PATH/.t4d/.containerID" ]]; then
+                    docker stop $T4D_CONTAINER_ID
+                    rm $Tools4Dev_PATH/.t4d/.containerID
+                fi
+            ;;
+        esac
+    ;;
+
+    -path|path)
         set -e
         cd $2
         shift

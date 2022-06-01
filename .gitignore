@@ -23,5 +23,12 @@ Man
 
 **/Inventory/*/*.env
 
+.play-store.json
+
 #External Modules
-Modules/nvm
+Modules/*
+!Modules/gik
+!Modules/bb8
+!Modules/jks
+!Modules/bpi
+!Modules/jic

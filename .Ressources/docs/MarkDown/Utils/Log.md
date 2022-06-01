@@ -3,6 +3,9 @@
 * [_t4dCheckFile](Log-checkIfExist.md#_t4dCheckFile)
     check if file exist then return normalized output
 
+* [_t4dCheckVariable](Log-checkIfExist.md#_t4dCheckVariable)
+    check if variable is not empty
+
 * [_t4dCheckFunction](Log-checkIfExist.md#_t4dCheckFunction)
     check if sended argument is an actual defined shell function
 
@@ -21,6 +24,9 @@
 * [_t4dCheckVersion](Log-checkIfExist.md#_t4dCheckVersion)
     check Tools4Dev version with sended and send normalized output
 
+* [_t4dCheckPackage](Log-checkIfExist.md#_t4dCheckPackage)
+    Check for package installed on fedora only
+
 * [_t4dCheckBinary](Log-checkIfExist.md#_t4dCheckBinary)
     DEPRECATED - see _t4dCheckCommand
 
@@ -29,6 +35,9 @@
 
 * [_t4dCheckBinaryVersion](Log-checkIfExist.md#_t4dCheckBinaryVersion)
     Utilitary that compare binary version and send normalized output
+
+* [_t4dCheckOSXApp](Log-checkIfExist.md#_t4dCheckOSXApp)
+    check for OSX app installed
 
 
 ### colors
@@ -39,14 +48,35 @@
 
 
 ### prompt
+* [_t4dPromptLine](Log-prompt.md#_t4dPromptLine)
+    Will read your term Length create a line with =
+
+* [_t4dPromptLineChar](Log-prompt.md#_t4dPromptLineChar)
+    Will read your term Length create a line with char send in $1
+
+* [_t4dPromptEndOfLine](Log-prompt.md#_t4dPromptEndOfLine)
+    Will write $1 at the end of line of your term
+
+* [_t4dPromptObjectEndOfLine](Log-prompt.md#_t4dPromptObjectEndOfLine)
+    Will write  at the end of line of your term
+
+* [_t4dPromptObjectCenter](Log-prompt.md#_t4dPromptObjectCenter)
+    Will write  at the end of line of your term
+
 * [_t4dPromptIndent](Log-prompt.md#_t4dPromptIndent)
     |One-line description of what it does. (less than 55 char)|
+
+* [_t4dPromptCentralLine](Log-prompt.md#_t4dPromptCentralLine)
+    Will read your term Length create a line with char send in $1
 
 * [_t4dPromptSize](Log-prompt.md#_t4dPromptSize)
     Get Terminal number of columns
 
 * [_t4dPromptListInfo](Log-prompt.md#_t4dPromptListInfo)
     Show a list of Variable name and contents
+
+* [_t4dPromptVarWithChar](Log-prompt.md#_t4dPromptVarWithChar)
+    Important and usefull method to fill variable with space to create a fixed lenght variable and generate pretty stdout blocks
 
 * [_t4dPromptVarCenterWithChar](Log-prompt.md#_t4dPromptVarCenterWithChar)
     Fill variable with char to create a fixed lenght variable with value at center
@@ -68,5 +98,8 @@
 
 * [_t4dPromptChart](Log-prompt.md#_t4dPromptChart)
     utils that will return a preformated table
+
+* [_t4dSrcPromptDemo](Log-prompt.md#_t4dSrcPromptDemo)
+    return an output to show user what can be done with prompt functions
 
 
