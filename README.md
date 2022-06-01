@@ -40,6 +40,7 @@ It might be similar to Oh-My-Zsh and it will fufill some of their features (in a
    * [Fedora](.Ressources/docs/MarkDown/Platforms/Fedora.md)
    * [Linux](.Ressources/docs/MarkDown/Platforms/Linux.md)
    * [MacOS](.Ressources/docs/MarkDown/Platforms/MacOS.md)
+   * [Ubuntu](.Ressources/docs/MarkDown/Platforms/Ubuntu.md)
  * [UserStories]()
    * [Projects]()
      * [How To Add A New Project - Singleton](.Ressources/docs/MarkDown/Stories/HowTo-AddNewProject-Singleton.md)

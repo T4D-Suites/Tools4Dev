@@ -5,7 +5,6 @@ Modules/gik/_main_:gik
 Modules/jic/_main_:jic
 Modules/jks/_main_:jks
 Source/Common/debug:t4ddm
-Source/Common/_main_:t4dLogVerbose
 Source/Common/_main_:t4dCheckForLastInit
 Source/Common/_main_:t4dCheckForUpdate
 Source/Common/_main_:t4dDoc
@@ -14,6 +13,7 @@ Source/Common/_main_:t4dHelp
 Source/Common/_main_:t4dImportExample
 Source/Common/_main_:t4dLoadModule
 Source/Common/_main_:t4dLogo
+Source/Common/_main_:t4dLogVerbose
 Source/Common/_main_:t4dPerf
 Source/Common/_main_:t4dUpdate
 Source/Common/_main_:t4dvv
@@ -25,8 +25,8 @@ Source/_main_:t4dLoadFile
 Source/_main_:t4dLoadProjectConf
 Source/_main_:t4dMake
 Engine/G4d/template-project:$_Name
-Engine/Make/completion:t4dLoadCompletion
 Engine/_main_:chf
 Engine/_main_:chl
 Engine/_main_:chm
 Engine/_main_:chp
+Engine/Make/completion:t4dLoadCompletion
