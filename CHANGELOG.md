@@ -108,4 +108,3 @@
 - _improvements_ T4D_NOTIFICATION - disable t4dCheckForUpdate if set to false
 - **feature**    t4d - new options docker + clone
 
-## 6.1.0
