@@ -107,4 +107,3 @@
 - **chore**     WIP - _t4dSrcYamlEdit
 - _improvements_ T4D_NOTIFICATION - disable t4dCheckForUpdate if set to false
 - **feature**    t4d - new options docker + clone
-
