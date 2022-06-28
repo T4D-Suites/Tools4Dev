@@ -1,0 +1,10 @@
+{
+    "Tools4Dev_PATH": {
+        "prefix": "Tools4Dev_PATH",
+        "body": "Tools4Dev_PATH",
+    },
+    "WS_ROOT": {
+        "prefix": "WS_ROOT",
+        "body": "WS_ROOT",
+    }
+}

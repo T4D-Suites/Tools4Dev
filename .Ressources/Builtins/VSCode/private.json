@@ -1,273 +1,273 @@
 {
-    "t4d.src.aws.cp": {
+    "_t4dSrcAwsCp": {
         "prefix": "_t4dSrcAwsCp",
         "body": "_t4dSrcAwsCp",
     },
-    "t4d.src.aws.image.describe": {
+    "_t4dSrcAwsImageDescribe": {
         "prefix": "_t4dSrcAwsImageDescribe",
         "body": "_t4dSrcAwsImageDescribe",
     },
-    "t4d.src.aws.instance.all.list": {
+    "_t4dSrcAwsInstanceAllList": {
         "prefix": "_t4dSrcAwsInstanceAllList",
         "body": "_t4dSrcAwsInstanceAllList",
     },
-    "t4d.src.aws.instance.get.status": {
+    "_t4dSrcAwsInstanceGetStatus": {
         "prefix": "_t4dSrcAwsInstanceGetStatus",
         "body": "_t4dSrcAwsInstanceGetStatus",
     },
-    "t4d.src.aws.instance.list": {
+    "_t4dSrcAwsInstanceList": {
         "prefix": "_t4dSrcAwsInstanceList",
         "body": "_t4dSrcAwsInstanceList",
     },
-    "t4d.src.aws.instance.querry": {
+    "_t4dSrcAwsInstanceQuerry": {
         "prefix": "_t4dSrcAwsInstanceQuerry",
         "body": "_t4dSrcAwsInstanceQuerry",
     },
-    "t4d.src.aws.instance.start": {
+    "_t4dSrcAwsInstanceStart": {
         "prefix": "_t4dSrcAwsInstanceStart",
         "body": "_t4dSrcAwsInstanceStart",
     },
-    "t4d.src.aws.instance.stop": {
+    "_t4dSrcAwsInstanceStop": {
         "prefix": "_t4dSrcAwsInstanceStop",
         "body": "_t4dSrcAwsInstanceStop",
     },
-    "t4d.src.aws.rm": {
+    "_t4dSrcAwsRm": {
         "prefix": "_t4dSrcAwsRm",
         "body": "_t4dSrcAwsRm",
     },
-    "t4d.src.aws.sub.net.describe": {
+    "_t4dSrcAwsSubNetDescribe": {
         "prefix": "_t4dSrcAwsSubNetDescribe",
         "body": "_t4dSrcAwsSubNetDescribe",
     },
-    "t4d.src.aws.check.credentials": {
+    "_t4dSrcAwsCheckCredentials": {
         "prefix": "_t4dSrcAwsCheckCredentials",
         "body": "_t4dSrcAwsCheckCredentials",
     },
-    "t4d.src.aws.export.file": {
+    "_t4dSrcAwsExportFile": {
         "prefix": "_t4dSrcAwsExportFile",
         "body": "_t4dSrcAwsExportFile",
     },
-    "t4d.src.aws.import.file": {
+    "_t4dSrcAwsImportFile": {
         "prefix": "_t4dSrcAwsImportFile",
         "body": "_t4dSrcAwsImportFile",
     },
-    "t4d.src.aws.list": {
+    "_t4dSrcAwsList": {
         "prefix": "_t4dSrcAwsList",
         "body": "_t4dSrcAwsList",
     },
-    "t4d.src.aws.list.buckets": {
+    "_t4dSrcAwsListBuckets": {
         "prefix": "_t4dSrcAwsListBuckets",
         "body": "_t4dSrcAwsListBuckets",
     },
-    "t4d.src.aws.list.folder": {
+    "_t4dSrcAwsListFolder": {
         "prefix": "_t4dSrcAwsListFolder",
         "body": "_t4dSrcAwsListFolder",
     },
-    "t4d.src.aws.ping.main.name": {
+    "_t4dSrcAwsPingMainName": {
         "prefix": "_t4dSrcAwsPingMainName",
         "body": "_t4dSrcAwsPingMainName",
     },
-    "t4d.src.aws.sync.status": {
+    "_t4dSrcAwsSyncStatus": {
         "prefix": "_t4dSrcAwsSyncStatus",
         "body": "_t4dSrcAwsSyncStatus",
     },
-    "t4d.check.binary": {
+    "_t4dCheckBinary": {
         "prefix": "_t4dCheckBinary",
         "body": "_t4dCheckBinary",
     },
-    "t4d.check.binary.version": {
+    "_t4dCheckBinaryVersion": {
         "prefix": "_t4dCheckBinaryVersion",
         "body": "_t4dCheckBinaryVersion",
     },
-    "t4d.check.command": {
+    "_t4dCheckCommand": {
         "prefix": "_t4dCheckCommand",
         "body": "_t4dCheckCommand",
     },
-    "t4d.check.env": {
+    "_t4dCheckEnv": {
         "prefix": "_t4dCheckEnv",
         "body": "_t4dCheckEnv",
     },
-    "t4d.check.failed": {
+    "_t4dCheckFailed": {
         "prefix": "_t4dCheckFailed",
         "body": "_t4dCheckFailed",
     },
-    "t4d.check.file": {
+    "_t4dCheckFile": {
         "prefix": "_t4dCheckFile",
         "body": "_t4dCheckFile",
     },
-    "t4d.check.folder": {
+    "_t4dCheckFolder": {
         "prefix": "_t4dCheckFolder",
         "body": "_t4dCheckFolder",
     },
-    "t4d.check.folder.is.not.empty": {
+    "_t4dCheckFolderIsNotEmpty": {
         "prefix": "_t4dCheckFolderIsNotEmpty",
         "body": "_t4dCheckFolderIsNotEmpty",
     },
-    "t4d.check.function": {
+    "_t4dCheckFunction": {
         "prefix": "_t4dCheckFunction",
         "body": "_t4dCheckFunction",
     },
-    "t4d.check.info": {
+    "_t4dCheckInfo": {
         "prefix": "_t4dCheckInfo",
         "body": "_t4dCheckInfo",
     },
-    "t4d.check.osxapp": {
+    "_t4dCheckOSXApp": {
         "prefix": "_t4dCheckOSXApp",
         "body": "_t4dCheckOSXApp",
     },
-    "t4d.check.package": {
+    "_t4dCheckPackage": {
         "prefix": "_t4dCheckPackage",
         "body": "_t4dCheckPackage",
     },
-    "t4d.check.succeeded": {
+    "_t4dCheckSucceeded": {
         "prefix": "_t4dCheckSucceeded",
         "body": "_t4dCheckSucceeded",
     },
-    "t4d.check.sym.link": {
+    "_t4dCheckSymLink": {
         "prefix": "_t4dCheckSymLink",
         "body": "_t4dCheckSymLink",
     },
-    "t4d.check.variable": {
+    "_t4dCheckVariable": {
         "prefix": "_t4dCheckVariable",
         "body": "_t4dCheckVariable",
     },
-    "t4d.check.version": {
+    "_t4dCheckVersion": {
         "prefix": "_t4dCheckVersion",
         "body": "_t4dCheckVersion",
     },
-    "t4d.check.warning": {
+    "_t4dCheckWarning": {
         "prefix": "_t4dCheckWarning",
         "body": "_t4dCheckWarning",
     },
-    "t4d.color.disabled": {
+    "_t4dColorDisabled": {
         "prefix": "_t4dColorDisabled",
         "body": "_t4dColorDisabled",
     },
-    "t4d.color.info": {
+    "_t4dColorInfo": {
         "prefix": "_t4dColorInfo",
         "body": "_t4dColorInfo",
     },
-    "t4d.debug.log": {
+    "_t4dDebugLog": {
         "prefix": "_t4dDebugLog",
         "body": "_t4dDebugLog",
     },
-    "t4d.prompt.ask.for.char": {
+    "_t4dPromptAskForChar": {
         "prefix": "_t4dPromptAskForChar",
         "body": "_t4dPromptAskForChar",
     },
-    "t4d.prompt.center.space": {
+    "_t4dPromptCenterSpace": {
         "prefix": "_t4dPromptCenterSpace",
         "body": "_t4dPromptCenterSpace",
     },
-    "t4d.prompt.central.line": {
+    "_t4dPromptCentralLine": {
         "prefix": "_t4dPromptCentralLine",
         "body": "_t4dPromptCentralLine",
     },
-    "t4d.prompt.chart": {
+    "_t4dPromptChart": {
         "prefix": "_t4dPromptChart",
         "body": "_t4dPromptChart",
     },
-    "t4d.prompt.col": {
+    "_t4dPromptCol": {
         "prefix": "_t4dPromptCol",
         "body": "_t4dPromptCol",
     },
-    "t4d.prompt.echo.timer": {
+    "_t4dPromptEchoTimer": {
         "prefix": "_t4dPromptEchoTimer",
         "body": "_t4dPromptEchoTimer",
     },
-    "t4d.prompt.empty.center": {
+    "_t4dPromptEmptyCenter": {
         "prefix": "_t4dPromptEmptyCenter",
         "body": "_t4dPromptEmptyCenter",
     },
-    "t4d.prompt.end.of.line": {
+    "_t4dPromptEndOfLine": {
         "prefix": "_t4dPromptEndOfLine",
         "body": "_t4dPromptEndOfLine",
     },
-    "t4d.prompt.error": {
+    "_t4dPromptError": {
         "prefix": "_t4dPromptError",
         "body": "_t4dPromptError",
     },
-    "t4d.prompt.fixed.col": {
+    "_t4dPromptFixedCol": {
         "prefix": "_t4dPromptFixedCol",
         "body": "_t4dPromptFixedCol",
     },
-    "t4d.prompt.hyper.link": {
+    "_t4dPromptHyperLink": {
         "prefix": "_t4dPromptHyperLink",
         "body": "_t4dPromptHyperLink",
     },
-    "t4d.prompt.indent": {
+    "_t4dPromptIndent": {
         "prefix": "_t4dPromptIndent",
         "body": "_t4dPromptIndent",
     },
-    "t4d.prompt.info": {
+    "_t4dPromptInfo": {
         "prefix": "_t4dPromptInfo",
         "body": "_t4dPromptInfo",
     },
-    "t4d.prompt.in.progress": {
+    "_t4dPromptInProgress": {
         "prefix": "_t4dPromptInProgress",
         "body": "_t4dPromptInProgress",
     },
-    "t4d.prompt.line": {
+    "_t4dPromptLine": {
         "prefix": "_t4dPromptLine",
         "body": "_t4dPromptLine",
     },
-    "t4d.prompt.line.char": {
+    "_t4dPromptLineChar": {
         "prefix": "_t4dPromptLineChar",
         "body": "_t4dPromptLineChar",
     },
-    "t4d.prompt.list.info": {
+    "_t4dPromptListInfo": {
         "prefix": "_t4dPromptListInfo",
         "body": "_t4dPromptListInfo",
     },
-    "t4d.prompt.logo": {
+    "_t4dPromptLogo": {
         "prefix": "_t4dPromptLogo",
         "body": "_t4dPromptLogo",
     },
-    "t4d.prompt.object.center": {
+    "_t4dPromptObjectCenter": {
         "prefix": "_t4dPromptObjectCenter",
         "body": "_t4dPromptObjectCenter",
     },
-    "t4d.prompt.object.end.of.line": {
+    "_t4dPromptObjectEndOfLine": {
         "prefix": "_t4dPromptObjectEndOfLine",
         "body": "_t4dPromptObjectEndOfLine",
     },
-    "t4d.prompt.size": {
+    "_t4dPromptSize": {
         "prefix": "_t4dPromptSize",
         "body": "_t4dPromptSize",
     },
-    "t4d.prompt.square": {
+    "_t4dPromptSquare": {
         "prefix": "_t4dPromptSquare",
         "body": "_t4dPromptSquare",
     },
-    "t4d.prompt.table": {
+    "_t4dPromptTable": {
         "prefix": "_t4dPromptTable",
         "body": "_t4dPromptTable",
     },
-    "t4d.prompt.var.center.with.char": {
+    "_t4dPromptVarCenterWithChar": {
         "prefix": "_t4dPromptVarCenterWithChar",
         "body": "_t4dPromptVarCenterWithChar",
     },
-    "t4d.prompt.var.with.char": {
+    "_t4dPromptVarWithChar": {
         "prefix": "_t4dPromptVarWithChar",
         "body": "_t4dPromptVarWithChar",
     },
-    "t4d.prompt.var.with.space": {
+    "_t4dPromptVarWithSpace": {
         "prefix": "_t4dPromptVarWithSpace",
         "body": "_t4dPromptVarWithSpace",
     },
-    "t4d.prompt.var.with.space.at.end": {
+    "_t4dPromptVarWithSpaceAtEnd": {
         "prefix": "_t4dPromptVarWithSpaceAtEnd",
         "body": "_t4dPromptVarWithSpaceAtEnd",
     },
-    "t4d.prompt.workspace": {
+    "_t4dPromptWorkspace": {
         "prefix": "_t4dPromptWorkspace",
         "body": "_t4dPromptWorkspace",
     },
-    "t4d.src.prompt.demo": {
+    "_t4dSrcPromptDemo": {
         "prefix": "_t4dSrcPromptDemo",
         "body": "_t4dSrcPromptDemo",
     },
-    "t4d.warning": {
+    "_t4dWarning": {
         "prefix": "_t4dWarning",
         "body": "_t4dWarning",
     }
