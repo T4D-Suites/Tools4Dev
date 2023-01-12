@@ -52,6 +52,8 @@ Show specific option's documentation
         >        * -o  *md|data|sh*  = force output to given style (default shell)
 - **comment**
     - _Display comments of given ticket_
+- **create**
+    - _description_
 - **help**
     - _Show Project Documentation_
 

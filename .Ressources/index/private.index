@@ -125,6 +125,7 @@ Modules/jic/jic-parser:_t4dModJicParseAndDumpLoop
 Modules/jic/jic-parser:_t4dModJicParseAndDumpLoopExternal
 Modules/jic/jic-parser:_t4dModJicParseAndDumpSingleTicket
 Modules/jic/jic-utils:_t4dModJicComment
+Modules/jic/jic-utils:_t4dModJicCreate
 Modules/jic/jic-utils:_t4dModJicHandleClientId
 Modules/jic/jic-utils:_t4dModJicInfo
 Modules/jic/jic-utils:_t4dModJicPersonalPrompt
@@ -498,6 +499,10 @@ Source/Jira/jira-api:_t4dJiraAPIPostv2
 Source/Jira/jira-api:_t4dJiraAPIPutv2
 Source/Jira/jira-api:_t4dJiraAPISearch
 Source/Jira/jira-info:_t4dJiraInfoGetProjectKey
+Source/Jira/jira-issue:_t4dSrcJiraIssueAssign
+Source/Jira/jira-issue:_t4dSrcJiraIssueCreateGetMetada
+Source/Jira/jira-issue:_t4dSrcJiraIssueDefaultTemplate
+Source/Jira/jira-issue:_t4dSrcJiraIssueGetAvailableTypes
 Source/Jira/jira-release:_t4dJiraRelease
 Source/Jira/jira-release:_t4dJiraReleaseAddIssue
 Source/Jira/jira-release:_t4dJiraReleaseJson
