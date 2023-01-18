@@ -74,6 +74,7 @@
       become: false
       register: api_create_user
       until: api_create_user is succeeded
+      localeMap: "en: en_US\\nfr: fr_FR\\nhe: he_IL\\nru: ru_RU\\nid: id_ID\\nms: id_ID\\nde: de_DE\\nes: es_ES\\nsg: zh_SG\\nzh: zh_SG\\ncn: zh_CN\\nth: th_TH"
       community.zabbix.zabbix_user:
         server_url: "{{ zabbix_url }}"
         login_user: "{{ zabbix_api_user }}"
