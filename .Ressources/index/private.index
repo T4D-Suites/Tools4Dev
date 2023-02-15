@@ -234,6 +234,7 @@ Source/Common/json:_t4dConvertToJson
 Source/Common/json:_t4dConvertJsonToJwt
 Source/Common/json:_t4dGetJsonData
 Source/Common/json:_t4dGetJsonTabSize
+Source/Common/json:_t4dJsonSearchInTab
 Source/Common/json:_t4dJsonSetData
 Source/Common/json:_t4dRemoveDataFromJson
 Source/Common/plist:_t4dPlistSetStringValue
@@ -381,7 +382,9 @@ Source/Git/git-utils:_t4dSrcGitUtilsGetVersionSuffix
 Source/Git/git-utils:_t4dSrcGitUtilsLoadCompletion
 Source/Git/git-utils:_t4dSrcGitUtilsNormalizeCommitMessage
 Source/Git/git-utils:_t4dSrcGitUtilsPull
+Source/Git/git-utils:_t4dSrcGitUtilsPurgeRepository
 Source/Git/git-utils:_t4dSrcGitUtilsPush
+Source/Git/git-utils:_t4dSrcGitUtilsSortBranchByDate
 Source/Git/git-utils:_t4dSrcGitUtilsStartBranch
 Source/Git/git-utils:_t4dSrcGitUtilsSwitchOrCreateBranch
 Source/Git/_main_:_t4dSrcGitGenerateManifestConfig
@@ -503,12 +506,16 @@ Source/Jira/jira-issue:_t4dSrcJiraIssueAssign
 Source/Jira/jira-issue:_t4dSrcJiraIssueCreateGetMetada
 Source/Jira/jira-issue:_t4dSrcJiraIssueDefaultTemplate
 Source/Jira/jira-issue:_t4dSrcJiraIssueGetAvailableTypes
+Source/Jira/jira-issue:_t4dSrcJiraIssueIdTemplate
+Source/Jira/jira-projects:_t4dSrcJiraProjectGetComponentDefaultAssignee
+Source/Jira/jira-projects:_t4dSrcJiraProjectGetComponents
 Source/Jira/jira-release:_t4dJiraRelease
 Source/Jira/jira-release:_t4dJiraReleaseAddIssue
 Source/Jira/jira-release:_t4dJiraReleaseJson
 Source/Jira/jira-release:_t4dJiraReleaseLinkIssueJson
 Source/Jira/jira-utils:_t4dSrcJiraCheckCredentials
 Source/Jira/jira-utils:_t4dSrcJiraGenerateJsonLogin
+Source/Jira/jira-utils:_t4dSrcJiraGetUsers
 Source/Jira/jira-utils:_t4dSrcJiraSetPassword
 Source/Jira/jira-utils:_t4dSrcJiraTestURL
 Source/Kubernetes/kubernetes-info:_t4dSrcKubeGetIngress
@@ -541,6 +548,7 @@ Source/Redmine/_main_:_t4dSrcRedmineDownloadFile
 Source/Slack/_main_:_t4dSrcSlackDefaultMessage
 Source/Slack/_main_:_t4dSrcSlackNotif
 Source/Slack/_main_:_t4dSrcSlackSendToChannel
+Source/SysAdmin/sysadmin-network:_t4dSrcSysAdminNetworkCheckUrl
 Source/WikiJS/wikijs-api:_t4dSrcWikiJsApi
 Source/WikiJS/wikijs-graphql:_t4dSrcWikiJsGraphQLCreatePage
 Source/WikiJS/wikijs-graphql:_t4dSrcWikiJsGraphQLMove

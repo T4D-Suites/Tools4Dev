@@ -1,6 +1,8 @@
 -project
 -prefix
+-component
 -description
 -type
+-outputFile
 -assign
 -force
