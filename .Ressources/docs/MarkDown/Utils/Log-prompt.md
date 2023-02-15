@@ -285,6 +285,19 @@ _t4dPromptVarWithChar 10 "yourVariable" '.' | sed 's|%||g'
 
 
 
+# _t4dPromptVarFillWithChar
+
+## Synopsis
+<p>fill variable</p>
+
+
+## Example
+<p>
+
+</p>
+
+
+
 # _t4dPromptEchoTimer
 
 ## Synopsis

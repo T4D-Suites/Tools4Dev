@@ -96,6 +96,9 @@
 * [_t4dPromptVarCenterWithChar](Log-prompt.md#_t4dPromptVarCenterWithChar)
     Fill variable with char to create a fixed lenght variable with value at center
 
+* [_t4dPromptVarFillWithChar](Log-prompt.md#_t4dPromptVarFillWithChar)
+    fill variable
+
 * [_t4dPromptEchoTimer](Log-prompt.md#_t4dPromptEchoTimer)
     Echo Timer that decrease his value until 1 + sleeping 1 seconds
 
