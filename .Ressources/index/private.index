@@ -380,7 +380,9 @@ Source/Git/git-utils:_t4dSrcGitUtilsGetVersionSuffix
 Source/Git/git-utils:_t4dSrcGitUtilsLoadCompletion
 Source/Git/git-utils:_t4dSrcGitUtilsNormalizeCommitMessage
 Source/Git/git-utils:_t4dSrcGitUtilsPull
+Source/Git/git-utils:_t4dSrcGitUtilsPurgeRepository
 Source/Git/git-utils:_t4dSrcGitUtilsPush
+Source/Git/git-utils:_t4dSrcGitUtilsSortBranchByDate
 Source/Git/git-utils:_t4dSrcGitUtilsStartBranch
 Source/Git/git-utils:_t4dSrcGitUtilsSwitchOrCreateBranch
 Source/Git/_main_:_t4dSrcGitGenerateManifestConfig
@@ -532,10 +534,12 @@ Source/Manifest/manifest-xml:_t4dManifestXmlGetLine
 Source/Manifest/manifest-xml:_t4dManifestXmlGetMarker
 Source/Manifest/manifest-xml:_t4dManifestXmlOpen
 Source/Manifest/manifest-xml:_t4dManifestXmlSetLine
+Source/Math/_main_:_t4dMath
 Source/Redmine/_main_:_t4dSrcRedmineDownloadFile
 Source/Slack/_main_:_t4dSrcSlackDefaultMessage
 Source/Slack/_main_:_t4dSrcSlackNotif
 Source/Slack/_main_:_t4dSrcSlackSendToChannel
+Source/SysAdmin/sysadmin-network:_t4dSrcSysAdminNetworkCheckUrl
 Source/WikiJS/wikijs-api:_t4dSrcWikiJsApi
 Source/WikiJS/wikijs-graphql:_t4dSrcWikiJsGraphQLCreatePage
 Source/WikiJS/wikijs-graphql:_t4dSrcWikiJsGraphQLMove
@@ -651,6 +655,7 @@ Engine/Log/prompt:_t4dPromptSize
 Engine/Log/prompt:_t4dPromptSquare
 Engine/Log/prompt:_t4dPromptTable
 Engine/Log/prompt:_t4dPromptVarCenterWithChar
+Engine/Log/prompt:_t4dPromptVarFillWithChar
 Engine/Log/prompt:_t4dPromptVarWithChar
 Engine/Log/prompt:_t4dPromptVarWithSpace
 Engine/Log/prompt:_t4dPromptVarWithSpaceAtEnd
