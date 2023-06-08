@@ -5,6 +5,7 @@ Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsEditPullRequestInfo
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsEditPullRequestInfoCase1
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsEditPullRequestInfoCase2
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsEditPullRequestInfoCase3
+Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsEditPullRequestInfoCase4
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsPropagatePRLog
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsPropagatePullRequestInfo
 Modules/bb8/bb8-edit-bitbucket:_t4dModBb8UtilsPropagatePullRequestInfoCase1
@@ -199,6 +200,7 @@ Source/BitBucket/bitbucket-api:_t4dBitBucketPullRequestAPIList
 Source/BitBucket/bitbucket-api:_t4dBitBucketPullRequestAPIListByBranch
 Source/BitBucket/bitbucket-api:_t4dBitBucketPullRequestAPIListByRepo
 Source/BitBucket/bitbucket-api:_t4dBitBucketPullRequestAPIMerge
+Source/BitBucket/bitbucket-api:_t4dBitBucketPullRequestSettingsAPIGet
 Source/BitBucket/bitbucket-api:_t4dBitBucketRepoAPIListBranches
 Source/BitBucket/bitbucket-api:_t4dBitBucketRepoGetDefaultReviewers
 Source/BitBucket/bitbucket-api:_t4dBitBucketSetBuildStatus
@@ -325,12 +327,14 @@ Source/FileSystem/_main_:_t4dSrcFileSystemDiskUsage
 Source/FileSystem/_main_:_t4dSrcFileSystemExtract
 Source/FileSystem/_main_:_t4dSrcFileSystemGetExtractedLast
 Source/FileSystem/_main_:_t4dSrcFileSystemMount
+Source/FileSystem/_main_:_t4dSrcFindFilesInLargeFolder
 Source/FileSystem/_main_:_t4dSrcSystemRsync
 Source/Firebase/firebase-api:_t4dSrcFirebaseApiListApps
 Source/Firebase/firebase-api:_t4dSrcFirebaseApiListProjects
 Source/Firebase/firebase-utils:_t4dSrcFirebaseAndroidUpload
 Source/Firebase/_main_:_t4dSrcFirebaseCheckCredentials
 Source/Git/git-info:_t4dSrcGitInfoBranch
+Source/Git/git-info:_t4dSrcGitInfoBranchLog
 Source/Git/git-info:_t4dSrcGitInfoBranchState
 Source/Git/git-info:_t4dSrcGitInfoBranchStatus
 Source/Git/git-info:_t4dSrcGitInfoCommitersEmail
@@ -467,6 +471,7 @@ Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildGetJenkinsLibSha7
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildGetPipelineStatus
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildGetProjectSha7
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildGetUrl
+Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildInfo
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildListArtifacts
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildMonitor
 Source/Jenkins/jenkins-page-build:_t4dSrcJenkinsPageBuildMonitorParsePipeline
@@ -497,6 +502,7 @@ Source/Jira/jira-api:_t4dJiraAPIGetMainPage
 Source/Jira/jira-api:_t4dJiraAPIGetTicket
 Source/Jira/jira-api:_t4dJiraAPIGetTicketAgile
 Source/Jira/jira-api:_t4dJiraAPIGetv2
+Source/Jira/jira-api:_t4dJiraAPIGetv3
 Source/Jira/jira-api:_t4dJiraAPILogin
 Source/Jira/jira-api:_t4dJiraAPIPostv2
 Source/Jira/jira-api:_t4dJiraAPIPutv2
@@ -629,6 +635,7 @@ Engine/Log/checkIfExist:_t4dCheckFolder
 Engine/Log/checkIfExist:_t4dCheckFolderIsNotEmpty
 Engine/Log/checkIfExist:_t4dCheckFunction
 Engine/Log/checkIfExist:_t4dCheckInfo
+Engine/Log/checkIfExist:_t4dCheckListPackage
 Engine/Log/checkIfExist:_t4dCheckOSXApp
 Engine/Log/checkIfExist:_t4dCheckPackage
 Engine/Log/checkIfExist:_t4dCheckSucceeded

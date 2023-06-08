@@ -236,6 +236,13 @@ Please see _t4dCheckBinaryVersion documentation to see exact output
 
 
 
+# _t4dCheckListPackage
+
+## Synopsis
+<p>check if package is installed. depend on platform</p>
+
+
+
 # _t4dCheckBinary
 
 ## Synopsis

@@ -27,6 +27,9 @@
 * [_t4dCheckPackage](Log-checkIfExist.md#_t4dCheckPackage)
     Check for package installed on fedora only
 
+* [_t4dCheckListPackage](Log-checkIfExist.md#_t4dCheckListPackage)
+    check if package is installed. depend on platform
+
 * [_t4dCheckBinary](Log-checkIfExist.md#_t4dCheckBinary)
     DEPRECATED - see _t4dCheckCommand
 
