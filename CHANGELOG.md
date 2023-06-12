@@ -123,3 +123,12 @@
 - _improvements_ jira: update and handle JiraAPI v2
 - **feature**    kvm: add virtualizer integration
 
+
+
+## 6.1.1
+- **feature**    jic : can now create ticket
+- **feature**    bb8 : can now access bitbucket settings threw api
+- **feature**    git : _t4dSrcGitInfoBranchLog list branch with important infos
+- **chore**     _t4dMath : using bc cli
+- **feature**    t4dSearch : find a function based on name
+- _improvements_ bb8 edit : can now update description
