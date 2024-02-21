@@ -2,7 +2,9 @@
 autoload -U colors &> /dev/null 
 colors &> /dev/null 
 export T4D_ROOT_PATH="${T4D_ROOT_PATH:-$HOME/.tools4dev}"
-if [[ "$(readlink $0)" != "" ]]; then
+if [[ "$0" == "./t4d" ]]; then
+    export Tools4Dev_PATH="$PWD"
+elif [[ "$(readlink $0)" != "" ]]; then
     export Tools4Dev_PATH="$(dirname "$(readlink -f $0)")"
 elif [[ -e "$0/../src" ]]; then
     export Tools4Dev_PATH="$(dirname "$0")"
