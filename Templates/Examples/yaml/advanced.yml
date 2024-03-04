@@ -106,6 +106,8 @@ version: 2.1
               average: yes
               high: yes
               disaster: yes
+              command: | 
+                  echo toto stuff:arround
             active: no
         type: Zabbix super admin
         state: present
