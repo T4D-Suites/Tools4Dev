@@ -106,8 +106,9 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.average|yes|14|KEY|average|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.high|yes|14|KEY|high|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.disaster|yes|14|KEY|disaster|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command ||14|KEY|command |§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command .echo toto||18|KEY|echo toto|§DASH§
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|§PIPE§§SPACE§|14|KEY|command|§DASH§
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§toto§SPACE§stuff§DASH§arround|18|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§titi§SPACE§line2|18|MULTILINE|§NONE§|
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.active|no|12|KEY|active|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.type|Zabbix§SPACE§super§SPACE§admin|8|KEY|type|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.state|present|8|KEY|state|§DASH§

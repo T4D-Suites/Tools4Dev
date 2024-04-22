@@ -108,6 +108,7 @@ version: 2.1
               disaster: yes
               command: | 
                   echo toto stuff:arround
+                  echo titi line2
             active: no
         type: Zabbix super admin
         state: present

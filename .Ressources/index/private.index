@@ -1,5 +1,8 @@
 #INDEX
 Templates/function-advanced:_t4dUtilsFindCharlie
+Source/Android/android-emulator:_t4dSrcAndroidEmulatorBoot
+Source/Android/android-emulator:_t4dSrcAndroidListConnectedDevices
+Source/Android/android-emulator:_t4dSrcAndroidWaitForDevice
 Source/Android/android-utils:_t4dSrcAndroidAdbExists
 Source/Android/android-utils:_t4dSrcAndroidCheckFolderPermission
 Source/Android/android-utils:_t4dSrcAndroidCheckJavaBinary
@@ -404,6 +407,7 @@ Source/Manifest/manifest-xml:_t4dManifestXmlFileInVar
 Source/Manifest/manifest-xml:_t4dManifestXmlGetData
 Source/Manifest/manifest-xml:_t4dManifestXmlGetLine
 Source/Manifest/manifest-xml:_t4dManifestXmlGetMarker
+Source/Manifest/manifest-xml:_t4dManifestXmlGetOptionalMarker
 Source/Manifest/manifest-xml:_t4dManifestXmlOpen
 Source/Manifest/manifest-xml:_t4dManifestXmlSetLine
 Source/Math/_main_:_t4dMath
