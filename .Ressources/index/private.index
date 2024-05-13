@@ -1,5 +1,8 @@
 #INDEX
 Templates/function-advanced:_t4dUtilsFindCharlie
+Source/Android/android-emulator:_t4dSrcAndroidEmulatorBoot
+Source/Android/android-emulator:_t4dSrcAndroidListConnectedDevices
+Source/Android/android-emulator:_t4dSrcAndroidWaitForDevice
 Source/Android/android-utils:_t4dSrcAndroidAdbExists
 Source/Android/android-utils:_t4dSrcAndroidCheckFolderPermission
 Source/Android/android-utils:_t4dSrcAndroidCheckJavaBinary
@@ -93,6 +96,8 @@ Source/Common/json:_t4dRemoveDataFromJson
 Source/Common/plist:_t4dPlistSetStringValue
 Source/Common/properties:_t4dGetPropertiesData
 Source/Common/properties:_t4dSetPropertiesData
+Source/Common/rand:_t4dSrcRandFromList
+Source/Common/rand:_t4dSrcRandString
 Source/Common/system:_t4dSystemAddToPATH
 Source/Common/system:_t4dSystemAddToPATHEnd
 Source/Common/system:_t4dSystemBindKeys
@@ -404,6 +409,7 @@ Source/Manifest/manifest-xml:_t4dManifestXmlFileInVar
 Source/Manifest/manifest-xml:_t4dManifestXmlGetData
 Source/Manifest/manifest-xml:_t4dManifestXmlGetLine
 Source/Manifest/manifest-xml:_t4dManifestXmlGetMarker
+Source/Manifest/manifest-xml:_t4dManifestXmlGetOptionalMarker
 Source/Manifest/manifest-xml:_t4dManifestXmlOpen
 Source/Manifest/manifest-xml:_t4dManifestXmlSetLine
 Source/Math/_main_:_t4dMath
