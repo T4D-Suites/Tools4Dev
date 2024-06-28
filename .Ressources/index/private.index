@@ -15,6 +15,9 @@ Source/Ansible/ansible-inventory:_t4dSrcAnsibleInventoryFind
 Source/Ansible/ansible-inventory:_t4dSrcAnsibleSortGroups
 Source/Ansible/_main_:_t4dSrcAnsibleInventory
 Source/Apple/apple-api:_t4dAppleApiCall
+Source/Apple/apple-keychain:_t4dSrcAppleKeychainGetPassword
+Source/Apple/apple-keychain:_t4dSrcAppleKeychainList
+Source/Apple/apple-keychain:_t4dSrcAppleKeychainSetPassword
 Source/Apple/apple-xctrace:_t4dSrcAppleXcrun
 Source/Apple/apple-xctrace:_t4dSrcAppleXctraceGetUuid
 Source/Apple/_main_:_t4dSrcAppleUploadOnTestFlight
@@ -528,6 +531,7 @@ Engine/Log/prompt:_t4dPromptCenterSpace
 Engine/Log/prompt:_t4dPromptCentralLine
 Engine/Log/prompt:_t4dPromptChart
 Engine/Log/prompt:_t4dPromptCol
+Engine/Log/prompt:_t4dPromptDiff
 Engine/Log/prompt:_t4dPromptEchoTimer
 Engine/Log/prompt:_t4dPromptEmptyCenter
 Engine/Log/prompt:_t4dPromptEndOfLine
