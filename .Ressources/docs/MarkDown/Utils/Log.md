@@ -120,6 +120,9 @@
 * [_t4dPromptEchoTimer](Log-prompt.md#_t4dPromptEchoTimer)
     Echo Timer that decrease his value until 1 + sleeping 1 seconds
 
+* [_t4dPromptDiff](Log-prompt.md#_t4dPromptDiff)
+    Show diff between 2 vars
+
 * [_t4dPromptSquare](Log-prompt.md#_t4dPromptSquare)
     Generate pretty square with your string in it (and by string i mean variable)
 

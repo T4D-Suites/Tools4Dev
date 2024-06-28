@@ -42,6 +42,10 @@ Show specific option's documentation
         >        * -user     = limit search to tickets assigned to user
 - **search**
     - _Display tickets resulting from given query_
+- **list**
+    - _Query Jira for all tickets in a project and display them_
+        >        * -project  = define project to search into
+        >        * -all      = display resolved and unresolved tickets
 - **info**
     - _Display full ticket info_
 - **release**

@@ -325,6 +325,13 @@ _t4dPromptVarWithChar 10 "yourVariable" '.' | sed 's|%||g'
 
 
 
+# _t4dPromptDiff
+
+## Synopsis
+<p>Show diff between 2 vars</p>
+
+
+
 # _t4dPromptSquare
 
 ## Synopsis
