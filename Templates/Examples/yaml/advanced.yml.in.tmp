@@ -1,0 +1,3 @@
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|§PIPE§§SPACE§|14|KEY|command|§DASH§
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§toto§SPACE§stuff§DASH§arround|18|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§titi§SPACE§line2|18|MULTILINE|§NONE§|
