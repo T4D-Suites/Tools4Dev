@@ -9,7 +9,7 @@ version: 2.1
   vars:
       app1:
           jvm: &jvm_opts
-              opts: '-Xms1G -Xmx2G'
+              opts: '-Xms1G [or] -Xmx2G'
               port: 1000
               path: /usr/lib/app1
       app2:

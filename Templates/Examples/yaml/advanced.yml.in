@@ -9,7 +9,7 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars||2|KEY|vars|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1||6|KEY|app1|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm|&jvm_opts|10|KEY|jvm|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm.opts|§SQUOTE§-Xms1G§SPACE§-Xmx2G§SQUOTE§|14|KEY|opts|§DASH§
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm.opts|§SQUOTE§-Xms1G§SPACE§§BRAKETIN§or§BRAKETOUT§§SPACE§-Xmx2G§SQUOTE§|14|KEY|opts|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm.port|1000|14|KEY|port|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm.path|/usr/lib/app1|14|KEY|path|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app2||6|KEY|app2|§DASH§
