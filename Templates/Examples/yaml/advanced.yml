@@ -6,6 +6,7 @@ version: 2.1
   become: yes
   vars_files:
     - vars/global.yml
+    - "{\$or: [{'test.email': { \$regex: '{arg2}'}, {'testKey': { \$regex: '{arg2}'}]}"
   vars:
       app1:
           jvm: &jvm_opts
