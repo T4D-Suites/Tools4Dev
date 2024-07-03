@@ -5,8 +5,8 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.hosts|§DQUOTE§{{§SPACE§myhosts§SPACE§§PIPE§§SPACE§default(§SQUOTE§§DASH§dbservers§SQUOTE§)§SPACE§}}§DQUOTE§|2|KEY|hosts|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.become|yes|2|KEY|become|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files||2|KEY|vars_files|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files|§SPACE§§SPACE§§SPACE§-§SPACE§vars/global§DOT§yml|4|MULTILINE|§NONE§|
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files|§SPACE§§SPACE§§SPACE§-§SPACE§§DQUOTE§{§ESCAPE§$or§DASH§§SPACE§§BRAKETIN§{§SQUOTE§test§DOT§email§SQUOTE§§DASH§§SPACE§{§SPACE§§ESCAPE§$regex§DASH§§SPACE§§SQUOTE§{arg2}§SQUOTE§},§SPACE§{§SQUOTE§testKey§SQUOTE§§DASH§§SPACE§{§SPACE§§ESCAPE§$regex§DASH§§SPACE§§SQUOTE§{arg2}§SQUOTE§}§BRAKETOUT§}§DQUOTE§|4|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files|-§SPACE§vars/global§DOT§yml|4|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars_files|-§SPACE§§DQUOTE§{§ESCAPE§$or§DASH§§SPACE§§BRAKETIN§{§SQUOTE§test§DOT§email§SQUOTE§§DASH§§SPACE§{§SPACE§§ESCAPE§$regex§DASH§§SPACE§§SQUOTE§{arg2}§SQUOTE§},§SPACE§{§SQUOTE§testKey§SQUOTE§§DASH§§SPACE§{§SPACE§§ESCAPE§$regex§DASH§§SPACE§§SQUOTE§{arg2}§SQUOTE§}§BRAKETOUT§}§DQUOTE§|4|MULTILINE|§NONE§|
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars||2|KEY|vars|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1||6|KEY|app1|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.app1.jvm|&jvm_opts|10|KEY|jvm|§DASH§
@@ -20,8 +20,8 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp||6|KEY|webapp|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.version|&my_version§SPACE§1§DOT§0|8|KEY|version|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.custom_name||8|KEY|custom_name|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.custom_name|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§-§SPACE§§DQUOTE§ToDo_App§DQUOTE§|12|MULTILINE|§NONE§|
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.custom_name|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§-§SPACE§*my_version|12|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.custom_name|-§SPACE§§DQUOTE§ToDo_App§DQUOTE§|12|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.vars.webapp.custom_name|-§SPACE§*my_version|12|MULTILINE|§NONE§|
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.roles||2|KEY|roles|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.roles>role~zabbix_server~|zabbix_server|4|LIST|role|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.roles>role~geerlingguy§DOT§apache~|geerlingguy§DOT§apache|4|LIST|role|§DASH§
@@ -70,7 +70,7 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~Deploy§SPACE§trigger§SPACE§action~.community§DOT§zabbix§DOT§zabbix_action.operations>type~send_message~.message|§DQUOTE§Come§SPACE§on,§SPACE§guys§SPACE§do§SPACE§something§DQUOTE§|12|KEY|message|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~Deploy§SPACE§trigger§SPACE§action~.community§DOT§zabbix§DOT§zabbix_action.operations>type~send_message~.media_type|§SQUOTE§Email§SQUOTE§|12|KEY|media_type|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~Deploy§SPACE§trigger§SPACE§action~.community§DOT§zabbix§DOT§zabbix_action.operations>type~send_message~.send_to_groups||12|KEY|send_to_groups|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~Deploy§SPACE§trigger§SPACE§action~.community§DOT§zabbix§DOT§zabbix_action.operations>type~send_message~.send_to_groups|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§-§SPACE§§SQUOTE§ops§SQUOTE§|14|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~Deploy§SPACE§trigger§SPACE§action~.community§DOT§zabbix§DOT§zabbix_action.operations>type~send_message~.send_to_groups|-§SPACE§§SQUOTE§ops§SQUOTE§|14|MULTILINE|§NONE§|
 ||0|NONE||
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~|create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§|4|LIST|name|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.connection|local|6|KEY|connection|§DASH§
@@ -86,8 +86,8 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.name|Werner|8|KEY|name|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.surname|Dijkerman|8|KEY|surname|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.usrgrps||8|KEY|usrgrps|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.usrgrps|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§-§SPACE§ops|10|MULTILINE|§NONE§|
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.usrgrps|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§-§SPACE§Zabbix§SPACE§administrators|10|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.usrgrps|-§SPACE§ops|10|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.usrgrps|-§SPACE§Zabbix§SPACE§administrators|10|MULTILINE|§NONE§|
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.passwd|password|8|KEY|passwd|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.lang|en_GB|8|KEY|lang|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.theme|blue-theme|8|KEY|theme|§DASH§
@@ -108,8 +108,8 @@
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.high|yes|14|KEY|high|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.disaster|yes|14|KEY|disaster|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|§PIPE§§SPACE§|14|KEY|command|§DASH§
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§echo§SPACE§toto§SPACE§stuff§DASH§arround|18|MULTILINE|§NONE§|
->name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§§SPACE§echo§SPACE§titi§SPACE§line2|18|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§toto§SPACE§stuff§DASH§arround|18|MULTILINE|§NONE§|
+>name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.severity.command|echo§SPACE§titi§SPACE§line2|18|MULTILINE|§NONE§|
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.user_medias>mediatype~Email~.active|no|12|KEY|active|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.type|Zabbix§SPACE§super§SPACE§admin|8|KEY|type|§DASH§
 >name~Set§SPACE§up§SPACE§DB§SPACE§server~.tasks>name~create§SPACE§of§SPACE§zabbix§SPACE§user§DOT§~.community§DOT§zabbix§DOT§zabbix_user.state|present|8|KEY|state|§DASH§
