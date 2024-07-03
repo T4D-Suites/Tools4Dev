@@ -9,6 +9,7 @@ Source/Common/_main_:t4dHelp
 Source/Common/_main_:t4dImportExample
 Source/Common/_main_:t4dLoadModule
 Source/Common/_main_:t4dLogo
+Source/Common/_main_:t4dPath
 Source/Common/_main_:t4dPerf
 Source/Common/_main_:t4dSearch
 Source/Common/_main_:t4dUpdate

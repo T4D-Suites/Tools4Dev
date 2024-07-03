@@ -67,6 +67,9 @@
 * [_t4dDebugLog](Log-debug.md#_t4dDebugLog)
     Log Function
 
+* [_t4dDebugLogInProgress](Log-debug.md#_t4dDebugLogInProgress)
+    Provinding log in progress
+
 * [_t4dDebugTimerReset](Log-debug.md#_t4dDebugTimerReset)
     Reset _t4dDebugLogInProgress with end of line statement
 

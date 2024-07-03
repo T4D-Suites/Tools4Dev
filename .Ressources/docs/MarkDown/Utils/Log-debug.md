@@ -21,6 +21,29 @@
 
 
 
+# _t4dDebugLogInProgress
+
+## Synopsis
+<p>Provinding log in progress</p>
+
+
+## Example
+<p>
+
+* _t4dDebugLogInProgress "Downloading Files" 1 15
+
+> * _t4dDebugLogInProgress "Downloading Files" 1 15
+
+
+* _t4dDebugLogInProgress "Downloading Files" 2 15
+
+> * _t4dDebugLogInProgress "Downloading Files" 2 15
+
+
+</p>
+
+
+
 # _t4dDebugTimerReset
 
 ## Synopsis

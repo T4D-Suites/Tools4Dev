@@ -453,6 +453,7 @@ Source/Yaml/yaml-serialize:_t4dSrcYamlPathDeSerialize
 Source/Yaml/yaml-serialize:_t4dSrcYamlPathSerialize
 Source/Yaml/yaml-serialize:_t4dSrcYamlSerialize
 Source/Yaml/_main_:_t4dSrcYamlEdit
+Source/Yaml/_main_:_t4dSrcYamlGetKey
 Source/Yaml/_main_:_t4dSrcYamlLinter
 Source/Yaml/_main_:_t4dSrcYamlReadFile
 Source/Yaml/_main_:_t4dSrcYamlSearch
