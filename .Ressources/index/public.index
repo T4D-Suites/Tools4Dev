@@ -1,6 +1,5 @@
 #INDEX
 Source/Common/debug:t4ddm
-Source/Common/_main_:t4dLogVerbose
 Source/Common/_main_:t4dCheckForLastInit
 Source/Common/_main_:t4dCheckForUpdate
 Source/Common/_main_:t4dDoc
@@ -9,6 +8,7 @@ Source/Common/_main_:t4dHelp
 Source/Common/_main_:t4dImportExample
 Source/Common/_main_:t4dLoadModule
 Source/Common/_main_:t4dLogo
+Source/Common/_main_:t4dLogVerbose
 Source/Common/_main_:t4dPath
 Source/Common/_main_:t4dPerf
 Source/Common/_main_:t4dSearch
@@ -25,8 +25,8 @@ Source/_main_:t4dLoadProjectConf
 Source/_main_:t4dMake
 Source/_main_:t4dModuleTest
 Engine/G4d/template-project:$_Name
-Engine/Make/completion:t4dLoadCompletion
 Engine/_main_:chf
 Engine/_main_:chl
 Engine/_main_:chm
 Engine/_main_:chp
+Engine/Make/completion:t4dLoadCompletion
