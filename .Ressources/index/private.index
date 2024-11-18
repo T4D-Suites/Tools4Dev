@@ -16,6 +16,7 @@ Source/Ansible/ansible-inventory:_t4dSrcAnsibleInventoryFind
 Source/Ansible/ansible-inventory:_t4dSrcAnsibleSortGroups
 Source/Ansible/_main_:_t4dSrcAnsibleInventory
 Source/Apple/apple-api:_t4dAppleApiCall
+Source/Apple/apple-api:_t4dAppleApiCreateToken
 Source/Apple/apple-keychain:_t4dSrcAppleKeychainGetPassword
 Source/Apple/apple-keychain:_t4dSrcAppleKeychainList
 Source/Apple/apple-keychain:_t4dSrcAppleKeychainSetPassword
@@ -85,6 +86,8 @@ Source/BitBucket/_main_:_t4dBitBucketDefaultWIPTag
 Source/CircleCI/circleci-api:_t4dSrcCircleCiApiAuth
 Source/CircleCI/circleci-api:_t4dSrcCircleCiApiTriggerPipeline
 Source/CircleCI/circleci-pipeline:_t4dSrcCircleCiPipelineDefaultJson
+Source/CircleCI/circleci-pipeline:_t4dSrcCircleCiPipelineParseJson
+Source/CircleCI/circleci-pipeline:_t4dSrcCircleCiPipelineTriggerPipeline
 Source/CMake/_main_:_t4dSrcCMakeParseTargets
 Source/Common/boolean:_t4dBooleanListContains
 Source/Common/debug:_t4dDebugInfoEnd

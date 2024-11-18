@@ -165,3 +165,19 @@
 
 
 ## 7.2.0
+- _improvements_ gik : add tree option
+- _improvements_ jic : add list option
+- _improvements_ T4D_PROMPT in install script to disable t4d prompt
+- documentation  g4d documentation
+- **chore**     remove generic modules
+- **chore**     add brew install script
+- **chore**     improve android emulator stability
+- **feature**    circleci api trigger pipeline integration
+- _improvements_ wkd -o option to openDir with configured IDE
+- **chore**     add rand from list function
+- _improvements_ upgrade gitLab version support to 13.12
+- **bugfix**     jira url was not properly propagated to api calls
+- **feature**    support tilt
+- **feature**    support matrix irc
+- **feature**    support yalm files
+- **chore**     load source files dynamicaly
