@@ -200,7 +200,7 @@ case $1 in
         t4d-init
         mkdir -p $Tools4Dev_PATH/.t4d
         _branch="$(_t4dSrcGitInfoBranch)"
-        _lastTag="$(_t4dSrcGitInfoLastTag)"
+        _lastTag="$(git for-each-ref --sort=creatordate --format '%(refname)' refs/tags | sed 's|refs/tags/||g' | tail -1)"
         _lastTagName="$(echo $_lastTag | cut -d ' ' -f2)"
         _lastTagCommit="$(echo $_lastTag | cut -d ' ' -f1)"
         _Commit="$(_t4dSrcGitInfoLogFromBranch "$(echo $_lastTag | cut -d ' ' -f1)" HEAD | wc -l | tr -d ' ')"
