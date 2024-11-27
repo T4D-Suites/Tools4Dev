@@ -37,6 +37,8 @@ function t4d-setup() {
         echo "Initial T4D Setup $Tools4Dev_PATH [$0]"
         if [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/opt/homebrew/opt/tools4dev" ]]; then
             ln -sfnv "/opt/homebrew/opt/tools4dev/src" "$T4D_ROOT_PATH/src"
+        if [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/opt/homebrew/opt/tools4dev-devel" ]]; then
+            ln -sfnv "/opt/homebrew/opt/tools4dev-devel/src" "$T4D_ROOT_PATH/src"
         elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/usr/local/opt/tools4dev" ]]; then
             ln -sfnv "/usr/local/opt/tools4dev/src" "$T4D_ROOT_PATH/src"
         elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]]; then
