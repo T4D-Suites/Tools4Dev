@@ -33,18 +33,20 @@ function t4d-native(){
 function t4d-setup() {
 
     mkdir -p $T4D_ROOT_PATH
-    if [[ ! -e "$T4D_ROOT_PATH/src" ]] || [[ "$1" == "-force" ]]; then
+    if [[ ! -e "$T4D_ROOT_PATH/src/VERSION" ]] || [[ "$1" == "-force" ]]; then
         echo "Initial T4D Setup $Tools4Dev_PATH [$0]"
-        if [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/opt/homebrew/opt/tools4dev" ]]; then
-            ln -sfnv "/opt/homebrew/opt/tools4dev/src" "$T4D_ROOT_PATH/src"
-        elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/opt/homebrew/opt/tools4dev-devel" ]]; then
+        if [[ -e "/opt/homebrew/opt/tools4dev-devel/src/VERSION" ]]; then
             ln -sfnv "/opt/homebrew/opt/tools4dev-devel/src" "$T4D_ROOT_PATH/src"
-        elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "/usr/local/opt/tools4dev" ]]; then
+        elif [[ -e "/opt/homebrew/opt/tools4dev/src/VERSION" ]]; then
+            ln -sfnv "/opt/homebrew/opt/tools4dev/src" "$T4D_ROOT_PATH/src"
+        elif [[ -e "/usr/local/opt/tools4dev/src/VERSION" ]]; then
             ln -sfnv "/usr/local/opt/tools4dev/src" "$T4D_ROOT_PATH/src"
-        elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]]; then
+        elif [[ "$Tools4Dev_PATH" != "$T4D_ROOT_PATH/src" ]] && [[ -e "$Tools4Dev_PATH/VERSION" ]]; then
             ln -sfnv "$Tools4Dev_PATH" "$T4D_ROOT_PATH/src"
-        elif [[ -e "$T4D_ROOT_PATH/src-devel" ]]; then
+        elif [[ -e "$T4D_ROOT_PATH/src-devel/src/VERSION" ]]; then
             ln -sfnv "$T4D_ROOT_PATH/src-devel" "$T4D_ROOT_PATH/src"
+        else
+            echo "Cannot find any Tools4Dev_PATH to repare Tools4Dev"
         fi
     fi
     if [[ ! -e "$(readlink -f $T4D_ROOT_PATH/.zshrc)" ]]; then
