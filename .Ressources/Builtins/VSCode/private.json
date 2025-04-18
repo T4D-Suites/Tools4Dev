@@ -1,0 +1,274 @@
+{
+    "_t4dSrcAwsCp": {
+        "prefix": "_t4dSrcAwsCp",
+        "body": "_t4dSrcAwsCp",
+    },
+    "_t4dSrcAwsImageDescribe": {
+        "prefix": "_t4dSrcAwsImageDescribe",
+        "body": "_t4dSrcAwsImageDescribe",
+    },
+    "_t4dSrcAwsInstanceAllList": {
+        "prefix": "_t4dSrcAwsInstanceAllList",
+        "body": "_t4dSrcAwsInstanceAllList",
+    },
+    "_t4dSrcAwsInstanceGetStatus": {
+        "prefix": "_t4dSrcAwsInstanceGetStatus",
+        "body": "_t4dSrcAwsInstanceGetStatus",
+    },
+    "_t4dSrcAwsInstanceList": {
+        "prefix": "_t4dSrcAwsInstanceList",
+        "body": "_t4dSrcAwsInstanceList",
+    },
+    "_t4dSrcAwsInstanceQuerry": {
+        "prefix": "_t4dSrcAwsInstanceQuerry",
+        "body": "_t4dSrcAwsInstanceQuerry",
+    },
+    "_t4dSrcAwsInstanceStart": {
+        "prefix": "_t4dSrcAwsInstanceStart",
+        "body": "_t4dSrcAwsInstanceStart",
+    },
+    "_t4dSrcAwsInstanceStop": {
+        "prefix": "_t4dSrcAwsInstanceStop",
+        "body": "_t4dSrcAwsInstanceStop",
+    },
+    "_t4dSrcAwsRm": {
+        "prefix": "_t4dSrcAwsRm",
+        "body": "_t4dSrcAwsRm",
+    },
+    "_t4dSrcAwsSubNetDescribe": {
+        "prefix": "_t4dSrcAwsSubNetDescribe",
+        "body": "_t4dSrcAwsSubNetDescribe",
+    },
+    "_t4dSrcAwsCheckCredentials": {
+        "prefix": "_t4dSrcAwsCheckCredentials",
+        "body": "_t4dSrcAwsCheckCredentials",
+    },
+    "_t4dSrcAwsExportFile": {
+        "prefix": "_t4dSrcAwsExportFile",
+        "body": "_t4dSrcAwsExportFile",
+    },
+    "_t4dSrcAwsImportFile": {
+        "prefix": "_t4dSrcAwsImportFile",
+        "body": "_t4dSrcAwsImportFile",
+    },
+    "_t4dSrcAwsList": {
+        "prefix": "_t4dSrcAwsList",
+        "body": "_t4dSrcAwsList",
+    },
+    "_t4dSrcAwsListBuckets": {
+        "prefix": "_t4dSrcAwsListBuckets",
+        "body": "_t4dSrcAwsListBuckets",
+    },
+    "_t4dSrcAwsListFolder": {
+        "prefix": "_t4dSrcAwsListFolder",
+        "body": "_t4dSrcAwsListFolder",
+    },
+    "_t4dSrcAwsPingMainName": {
+        "prefix": "_t4dSrcAwsPingMainName",
+        "body": "_t4dSrcAwsPingMainName",
+    },
+    "_t4dSrcAwsSyncStatus": {
+        "prefix": "_t4dSrcAwsSyncStatus",
+        "body": "_t4dSrcAwsSyncStatus",
+    },
+    "_t4dCheckBinary": {
+        "prefix": "_t4dCheckBinary",
+        "body": "_t4dCheckBinary",
+    },
+    "_t4dCheckBinaryVersion": {
+        "prefix": "_t4dCheckBinaryVersion",
+        "body": "_t4dCheckBinaryVersion",
+    },
+    "_t4dCheckCommand": {
+        "prefix": "_t4dCheckCommand",
+        "body": "_t4dCheckCommand",
+    },
+    "_t4dCheckEnv": {
+        "prefix": "_t4dCheckEnv",
+        "body": "_t4dCheckEnv",
+    },
+    "_t4dCheckFailed": {
+        "prefix": "_t4dCheckFailed",
+        "body": "_t4dCheckFailed",
+    },
+    "_t4dCheckFile": {
+        "prefix": "_t4dCheckFile",
+        "body": "_t4dCheckFile",
+    },
+    "_t4dCheckFolder": {
+        "prefix": "_t4dCheckFolder",
+        "body": "_t4dCheckFolder",
+    },
+    "_t4dCheckFolderIsNotEmpty": {
+        "prefix": "_t4dCheckFolderIsNotEmpty",
+        "body": "_t4dCheckFolderIsNotEmpty",
+    },
+    "_t4dCheckFunction": {
+        "prefix": "_t4dCheckFunction",
+        "body": "_t4dCheckFunction",
+    },
+    "_t4dCheckInfo": {
+        "prefix": "_t4dCheckInfo",
+        "body": "_t4dCheckInfo",
+    },
+    "_t4dCheckOSXApp": {
+        "prefix": "_t4dCheckOSXApp",
+        "body": "_t4dCheckOSXApp",
+    },
+    "_t4dCheckPackage": {
+        "prefix": "_t4dCheckPackage",
+        "body": "_t4dCheckPackage",
+    },
+    "_t4dCheckSucceeded": {
+        "prefix": "_t4dCheckSucceeded",
+        "body": "_t4dCheckSucceeded",
+    },
+    "_t4dCheckSymLink": {
+        "prefix": "_t4dCheckSymLink",
+        "body": "_t4dCheckSymLink",
+    },
+    "_t4dCheckVariable": {
+        "prefix": "_t4dCheckVariable",
+        "body": "_t4dCheckVariable",
+    },
+    "_t4dCheckVersion": {
+        "prefix": "_t4dCheckVersion",
+        "body": "_t4dCheckVersion",
+    },
+    "_t4dCheckWarning": {
+        "prefix": "_t4dCheckWarning",
+        "body": "_t4dCheckWarning",
+    },
+    "_t4dColorDisabled": {
+        "prefix": "_t4dColorDisabled",
+        "body": "_t4dColorDisabled",
+    },
+    "_t4dColorInfo": {
+        "prefix": "_t4dColorInfo",
+        "body": "_t4dColorInfo",
+    },
+    "_t4dDebugLog": {
+        "prefix": "_t4dDebugLog",
+        "body": "_t4dDebugLog",
+    },
+    "_t4dPromptAskForChar": {
+        "prefix": "_t4dPromptAskForChar",
+        "body": "_t4dPromptAskForChar",
+    },
+    "_t4dPromptCenterSpace": {
+        "prefix": "_t4dPromptCenterSpace",
+        "body": "_t4dPromptCenterSpace",
+    },
+    "_t4dPromptCentralLine": {
+        "prefix": "_t4dPromptCentralLine",
+        "body": "_t4dPromptCentralLine",
+    },
+    "_t4dPromptChart": {
+        "prefix": "_t4dPromptChart",
+        "body": "_t4dPromptChart",
+    },
+    "_t4dPromptCol": {
+        "prefix": "_t4dPromptCol",
+        "body": "_t4dPromptCol",
+    },
+    "_t4dPromptEchoTimer": {
+        "prefix": "_t4dPromptEchoTimer",
+        "body": "_t4dPromptEchoTimer",
+    },
+    "_t4dPromptEmptyCenter": {
+        "prefix": "_t4dPromptEmptyCenter",
+        "body": "_t4dPromptEmptyCenter",
+    },
+    "_t4dPromptEndOfLine": {
+        "prefix": "_t4dPromptEndOfLine",
+        "body": "_t4dPromptEndOfLine",
+    },
+    "_t4dPromptError": {
+        "prefix": "_t4dPromptError",
+        "body": "_t4dPromptError",
+    },
+    "_t4dPromptFixedCol": {
+        "prefix": "_t4dPromptFixedCol",
+        "body": "_t4dPromptFixedCol",
+    },
+    "_t4dPromptHyperLink": {
+        "prefix": "_t4dPromptHyperLink",
+        "body": "_t4dPromptHyperLink",
+    },
+    "_t4dPromptIndent": {
+        "prefix": "_t4dPromptIndent",
+        "body": "_t4dPromptIndent",
+    },
+    "_t4dPromptInfo": {
+        "prefix": "_t4dPromptInfo",
+        "body": "_t4dPromptInfo",
+    },
+    "_t4dPromptInProgress": {
+        "prefix": "_t4dPromptInProgress",
+        "body": "_t4dPromptInProgress",
+    },
+    "_t4dPromptLine": {
+        "prefix": "_t4dPromptLine",
+        "body": "_t4dPromptLine",
+    },
+    "_t4dPromptLineChar": {
+        "prefix": "_t4dPromptLineChar",
+        "body": "_t4dPromptLineChar",
+    },
+    "_t4dPromptListInfo": {
+        "prefix": "_t4dPromptListInfo",
+        "body": "_t4dPromptListInfo",
+    },
+    "_t4dPromptLogo": {
+        "prefix": "_t4dPromptLogo",
+        "body": "_t4dPromptLogo",
+    },
+    "_t4dPromptObjectCenter": {
+        "prefix": "_t4dPromptObjectCenter",
+        "body": "_t4dPromptObjectCenter",
+    },
+    "_t4dPromptObjectEndOfLine": {
+        "prefix": "_t4dPromptObjectEndOfLine",
+        "body": "_t4dPromptObjectEndOfLine",
+    },
+    "_t4dPromptSize": {
+        "prefix": "_t4dPromptSize",
+        "body": "_t4dPromptSize",
+    },
+    "_t4dPromptSquare": {
+        "prefix": "_t4dPromptSquare",
+        "body": "_t4dPromptSquare",
+    },
+    "_t4dPromptTable": {
+        "prefix": "_t4dPromptTable",
+        "body": "_t4dPromptTable",
+    },
+    "_t4dPromptVarCenterWithChar": {
+        "prefix": "_t4dPromptVarCenterWithChar",
+        "body": "_t4dPromptVarCenterWithChar",
+    },
+    "_t4dPromptVarWithChar": {
+        "prefix": "_t4dPromptVarWithChar",
+        "body": "_t4dPromptVarWithChar",
+    },
+    "_t4dPromptVarWithSpace": {
+        "prefix": "_t4dPromptVarWithSpace",
+        "body": "_t4dPromptVarWithSpace",
+    },
+    "_t4dPromptVarWithSpaceAtEnd": {
+        "prefix": "_t4dPromptVarWithSpaceAtEnd",
+        "body": "_t4dPromptVarWithSpaceAtEnd",
+    },
+    "_t4dPromptWorkspace": {
+        "prefix": "_t4dPromptWorkspace",
+        "body": "_t4dPromptWorkspace",
+    },
+    "_t4dSrcPromptDemo": {
+        "prefix": "_t4dSrcPromptDemo",
+        "body": "_t4dSrcPromptDemo",
+    },
+    "_t4dWarning": {
+        "prefix": "_t4dWarning",
+        "body": "_t4dWarning",
+    }
+}
